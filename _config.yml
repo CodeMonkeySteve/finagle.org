@@ -1,0 +1,15 @@
+markdown: rdiscount
+auto: true
+lsi: true
+pygments: true
+
+#haml: true
+#sass: true
+#post_defaults:
+#  layout: post
+#  author: code_monkey_steve
+
+permalink: /:year/:month/:title.html
+url: http://finagle.org
+exclude: Gemfile Gemfile.lock vendor config.ru lucid finagle.kdev4
+

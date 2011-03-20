@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Finagle</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link href="/stylesheets/master.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/stylesheets/color.css" media="screen" rel="stylesheet" type="text/css" />
+
+  <script src="/javascripts/prototype.js" type="text/javascript"></script>
+  <script src="/javascripts/effects.js" type="text/javascript"></script>
+  <script src="/javascripts/typo.js" type="text/javascript"></script>
+  <script src="/javascripts/lucid.js" type="text/javascript"></script>
+
+  <link href="/feed/atom.xml" rel="alternate" type="application/atom+xml" />
+</head>
+<body class="c-ms cs0 fixed">
+  <div id="wrapper">
+    <div id="w2">
+      <div class="clearfix" id="w3">
+        <div class="clearfix" id="header">
+          <div id="logo">
+            <!-- <a href="/"><img src="/images/logo.png" alt="" /></a> -->
+            <h1 class="pageTitle">
+              <a href="/">Finagle</a>
+              <!-- <span class='subtitle'>&mdash; a weblog</span> -->
+            </h1>
+            <h2>Changing the world would be easier if I had the source code.</h2>
+          </div>
+          <div id="search"></div>
+        </div>
+        <div id="content">
+  <div id="maincol">
+    <div id="mc2">
+
+      <div class="post">
+        <div class="post-title"><h1>Safe Mailing with mail_safe</h1></div>
+        <p class="auth">Posted by code_monkey_steve,
+          <span class="typo_date" title="2009/09/21">2009-09-21 00:00:00 -0700</span></p>
+        <div class="post-body">
+        <p>Working on a production website can be a bit nerve-wracking, especially when it comes to testing features that send email as a side effect: one little bug could wind up spamming all of your precious users.  Of course, Rails has the basic safety feature of simply disabling mail delivery in certain environments (i.e. test and development), but that&#8217;s no good because sometimes you do want to test that mail is actually delivered, just without having to worry that it&#8217;s delivered to live users.</p>
+<p>Enter <a href="http://github.com/myronmarston/mail_safe">mail_safe</a>, a handy little gem written by my co-worker Myron.  Instead of disabling mail delivery environment-wide, mail_safe allows you to define one or more domains for which mail should be delivered, and a catch-all address for those that shouldn&#8217;t.  This allows for testing with a real account (if it&#8217;s in the appropriate domain), while still keeping you secure against unintentional spam.</p>
+<p>Once you&#8217;ve started using it, you&#8217;ll wonder how you ever slept soundly without it.  It&#8217;s the sort of thing that should probably be included in the Rails core (<span class="caps">IMNSHO</span>).</p>
+        </div>
+        
+          <p class="meta">
+            Tags: rails
+          </p>
+        
+        <div id="disqus_thread"></div>
+      </div>
+
+    </div>
+  </div>
+  <div id="subcol">
+    <div class="bt"><div></div></div>
+    <div id="sc2">
+      <div class="sidebar-node">
+  <h3>Related</h3>
+    <ul class="counts">
+      
+        
+      
+        
+          <li><a href="/2006/07/a-few-of-my-favorite-things.html">A Few of My Favorite Things</a></li>
+        
+      
+        
+          <li><a href="/2009/07/i-hate-shoulda-but-i-blame-test-unit.html">I Hate Shoulda (But I Blame Test::Unit)</a></li>
+        
+      
+        
+          <li><a href="/2010/10/take-my-money-please.html">Take my money, please!</a></li>
+        
+      
+        
+          <li><a href="/2006/09/linking-outside-of-the-box-optimizing-ruby-with-c-c.html">Linking Outside of the Box: Optimizing Ruby with C/C++</a></li>
+        
+      
+        
+          <li><a href="/2010/02/swing-from-tree-to-tree.html">Swinging from Tree to Tree</a></li>
+        
+      
+        
+          <li><a href="/2010/01/json-and-the-args-or-not.html">JSON and the Args (or Not)</a></li>
+        
+      
+        
+          <li><a href="/2006/09/odin.html">ODIN: Secure P2P on the Web</a></li>
+        
+      
+        
+          <li><a href="/2009/05/couch-trouble.html">Couch Trouble</a></li>
+        
+      
+        
+          <li><a href="/2007/03/back-on-rails.html">Back on Rails</a></li>
+        
+      
+        
+          <li><a href="/2006/06/grooming-my-inner-codemonkey.html">Grooming My Inner CodeMonkey</a></li>
+        
+      
+    </ul>
+</div>
+
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+  var disqus_shortname = 'finagle';
+  var disqus_identifier = '';
+  var disqus_url = 'http://finagle.org/2009/09/safe-mailing-with-safe_mail.html';
+
+  (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+        <div id="footer">
+          <p>
+            <a href="http://validator.w3.org/check/referer" title="Validates this page">XHTML</a>,
+            <a href="http://jigsaw.w3.org/css-validator/check/referer?warning=no&amp;profile=css2" title="Validates the CSS on this page.">CSS</a>.
+            Template by <a href="http://www.soniciq.com" title="SonicIQ - Website Development">SonicIQ</a>.
+            Blog comments powered by <a href="http://disqus.com" class="dsq-brlink">Disqus</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Google Analytics -->
+<script type="text/javascript">
+  var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+  document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+  try {
+    var pageTracker = _gat._getTracker("UA-10834046-1");
+    pageTracker._trackPageview();
+  } catch(err) {}
+</script>
+
+</body>
+</html>

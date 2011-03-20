@@ -1,0 +1,8 @@
+<div class="sidebar-node">
+  <h3>Categories</h3>
+      <ul class="counts">
+      {% for category in site.categories %}
+        <li><a href="{{ category.url }}">{{ category }}</a> ({{ site.categories.category | size }}) </li>
+      {% endfor %}
+      </ul>
+</div>

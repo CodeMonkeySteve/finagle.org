@@ -1,0 +1,4 @@
+.bundle
+.kdev4
+vendor/bundle/*
+!vendor/bundle/cache/*.gem

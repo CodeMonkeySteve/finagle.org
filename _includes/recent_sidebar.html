@@ -1,0 +1,12 @@
+<div class="sidebar-node">
+  <h3>Recently</h3>
+  <ul class="dates">
+    {% for post in site.posts %}
+      {% if forloop.index <= 5 %}
+        <li><a href="{{ post.url }}"><span class="date">{{ post.date | date: '%m.%y' }}</span> {{ post.title }}</a></li>
+      {% endif %}
+    {% endfor %}
+    <li><a href="/archive.html" class="archives">More ...</a></li>
+  </ul>
+</div>
+

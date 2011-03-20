@@ -1,0 +1,293 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Finagle</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link href="/stylesheets/master.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/stylesheets/color.css" media="screen" rel="stylesheet" type="text/css" />
+
+  <script src="/javascripts/prototype.js" type="text/javascript"></script>
+  <script src="/javascripts/effects.js" type="text/javascript"></script>
+  <script src="/javascripts/typo.js" type="text/javascript"></script>
+  <script src="/javascripts/lucid.js" type="text/javascript"></script>
+
+  <link href="/feed/atom.xml" rel="alternate" type="application/atom+xml" />
+</head>
+<body class="c-ms cs0 fixed">
+  <div id="wrapper">
+    <div id="w2">
+      <div class="clearfix" id="w3">
+        <div class="clearfix" id="header">
+          <div id="logo">
+            <!-- <a href="/"><img src="/images/logo.png" alt="" /></a> -->
+            <h1 class="pageTitle">
+              <a href="/">Finagle</a>
+              <!-- <span class='subtitle'>&mdash; a weblog</span> -->
+            </h1>
+            <h2>Changing the world would be easier if I had the source code.</h2>
+          </div>
+          <div id="search"></div>
+        </div>
+        <div id="content">
+  <div id="maincol">
+    <div id="mc2">
+    
+  
+      <div class="post first">
+  <div class="post-title"><h1><a href="/2011/03/back-from-the-dead.html">Back from the Dead</a></h1></div>
+  <p class="auth">Posted by code_monkey_steve,
+    <span class="typo_date" title="2011/03/20">2011-03-20 00:00:00 -0700</span></p>
+  <div class="post-body">
+  <p>Greetings, everyone!  Welcome to my new-and-improved blog.</p>
+<p>I&#8217;ve decided to merge my coding blog (&#8220;One-Banana Problem&#8221;), which has gone woefully under-updated, with my website (&#8220;finagle.org&#8221;), which is gone woefully under-used, and you&#8217;re now looking at the result.  If you&#8217;re thinking it looks a lot like One-Banana Problem &#8230;</p>
+<ol>
+	<li>You actually read my blog? Wow thanks, you&#8217;re awesome, that almost doubles my audience!</li>
+	<li>It looks the same because it&#8217;s a port of the original content and style from <span class="caps">OBP</span> to a new platform.</li>
+</ol>
+<p>Why a new platform?  I&#8217;m glad you asked, therein lies the story &#8230;</p>
+<h5>The Story</h5>
+<p>It all started a few months back, when I went to compose a long-overdue <span class="caps">OBP</span> post, and discovered that Mephisto wasn&#8217;t letting me login.  How rude.  A quick Google not only failed to provide a solution to the problem, but indicated that Mephisto was no longer maintained or supported.  The consensus appeared to be to migrate to a combination of <a href="https://github.com/mojombo/jekyll">Jekyll</a>, a static-site generator, and the <a href="http://disqus.com/">Disqus</a> commenting system.  Over the months since, I&#8217;ve followed the same path, deploying the new blog on <a href="http://heroku.com">Heroku</a>, my preferred hosting service.  Porting the content was fairly easy, but porting the theme not so much.</p>
+<h5>Jekyll</h5>
+<p>The best I can say about Jekyll is that it works well enough to get things running again.  At first, I was considering using it for some static brochure sites for friends and family, but after getting it working I&#8217;ve decided it&#8217;s not good for me for a few reasons:</p>
+<ul>
+	<li>No <a href="http://haml-lang.com"><span class="caps">HAML</span></a> support. Although there are lots of hacks and extensions that claim to fix this, I could never get any of them to work.</li>
+	<li>Heroku provides Varnish to automatically cache pages, so generating static <span class="caps">HTML</span> content doesn&#8217;t give any significant speed improvement.</li>
+	<li>I do have to check-in all that static content to Git, which just needlessly bloats the Heroku slug.</li>
+	<li>Heroku provides a Rack interface, which means I still need to use a (tiny) <a href="http://sinatrarb.com">Sinatra</a> app to serve that static content.</li>
+</ul>
+<p>While I can appreciate the idea of storing the content in the blog code itself, with metadata in a <span class="caps">YAML</span> header block and the copy in <a href="http://en.wikipedia.org/wiki/Textile_(markup_language)">Textile</a>, I think I&#8217;ll stick to Sinatra for my static sites.  I&#8217;m already working on a <span class="caps">CMS</span>-ish project that will probably replace Jekyll as soon as it&#8217;s done enough.</p>
+<h5>Moving Forward</h5>
+<p>I originally started One-Banana Problem in 2006, after getting laid-off from a failing startup.  I wanted to make the switch from a C++ developer to a Ruby/Rails guy, and I thought a blog would help not only to share my hard-won knowledge, but also to market myself to the Rails community in hopes of finding a good job.  To that end, I tried to keep the tone professional and the content mostly related to Ruby and Rails.</p>
+<p>But here we are, five years later, and now I&#8217;m living living the dream of a full-time Ruby developer (woo-hoo!).  However, having achieved that goal, I find myself with less motivation for blogging, and more importantly, with less time.</p>
+<p>To counter this trend I&#8217;ve decided that, as part of The Great Blog Renaming, that I would expand the scope from a mostly coding-centric blog, to including hacking of all kinds.  I am a geek, after all, and to my brain all problems have technological solutions.  I have some interesting ideas for things like secure voting, digital currency, and even improvements to the democratic process (which hasn&#8217;t changed significantly in centuries), and I&#8217;ll try to find the time to comment on these sorts of political and social issues more freely in the future.</p>
+<p>I&#8217;ve also come to the conclusion that trying to keep things &#8220;professional&#8221; is boring and pointless.  If you can&#8217;t be open an honest bastard with the whole Internet, viewable by all and archive forever, then why bother blogging?</p>
+  </div>
+  <p class="meta">
+    <a href="/2011/03/back-from-the-dead.html#disqus_thread" data-disqus-identifier="/2011/03/back-from-the-dead">comments</a>
+    
+      | Tags: blog jekyll heroku
+    
+  </p>
+</div>
+
+    
+
+  
+      <h2>Next post: <a href="/2010/10/take-my-money-please.html">"Take my money, please!"</a> ...</h2>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+<div class="clear"></div>
+
+    </div>
+  </div>
+
+  <div id="subcol">
+    <div class="bt"><div></div></div>
+    <div id="sc2">
+      <div id="about" class="sidebar-node">
+  <h3>About Me</h3>
+  <ul class="dates">
+    <li><a href="http://github.com/CodeMonkeySteve/">CodeMonkeySteve</a> on <a href="http://github.com">GitHub</a></li>
+    <li><a href="http://www.linkedin.com/in/codemonkeysteve">Steve Sloan</a> in Real Life</li>
+    <li><a href="http://www.google.com/search?q=finagle">What's a Finagle?</a></li>
+  </ul>
+</div>
+
+
+      <div class="sidebar-node">
+  <h3>Recently</h3>
+  <ul class="dates">
+    
+      
+        <li><a href="/2011/03/back-from-the-dead.html"><span class="date">03.11</span> Back from the Dead</a></li>
+      
+    
+      
+        <li><a href="/2010/10/take-my-money-please.html"><span class="date">10.10</span> Take my money, please!</a></li>
+      
+    
+      
+        <li><a href="/2010/09/autotest-and-ruby-1-9-2.html"><span class="date">09.10</span> Autotest and Ruby 1.9.2</a></li>
+      
+    
+      
+        <li><a href="/2010/05/ruby-gets-possessive.html"><span class="date">05.10</span> Ruby Gets Possessive</a></li>
+      
+    
+      
+        <li><a href="/2010/02/swing-from-tree-to-tree.html"><span class="date">02.10</span> Swinging from Tree to Tree</a></li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+    <li><a href="/archive.html" class="archives">More ...</a></li>
+  </ul>
+</div>
+
+
+    </div>
+  </div>
+</div>
+<div id="subfoot">
+  <div class="bb">
+    <div></div>
+  </div>
+</div>
+
+<script type="text/javascript">
+  var disqus_shortname = 'finagle';
+  (function () {
+      var s = document.createElement('script'); s.async = true;
+      s.type = 'text/javascript';
+      s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+      (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+  }());
+</script>
+
+        <div id="footer">
+          <p>
+            <a href="http://validator.w3.org/check/referer" title="Validates this page">XHTML</a>,
+            <a href="http://jigsaw.w3.org/css-validator/check/referer?warning=no&amp;profile=css2" title="Validates the CSS on this page.">CSS</a>.
+            Template by <a href="http://www.soniciq.com" title="SonicIQ - Website Development">SonicIQ</a>.
+            Blog comments powered by <a href="http://disqus.com" class="dsq-brlink">Disqus</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Google Analytics -->
+<script type="text/javascript">
+  var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+  document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+  try {
+    var pageTracker = _gat._getTracker("UA-10834046-1");
+    pageTracker._trackPageview();
+  } catch(err) {}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Finagle</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link href="/stylesheets/master.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/stylesheets/color.css" media="screen" rel="stylesheet" type="text/css" />
+
+  <script src="/javascripts/prototype.js" type="text/javascript"></script>
+  <script src="/javascripts/effects.js" type="text/javascript"></script>
+  <script src="/javascripts/typo.js" type="text/javascript"></script>
+  <script src="/javascripts/lucid.js" type="text/javascript"></script>
+
+  <link href="/feed/atom.xml" rel="alternate" type="application/atom+xml" />
+</head>
+<body class="c-ms cs0 fixed">
+  <div id="wrapper">
+    <div id="w2">
+      <div class="clearfix" id="w3">
+        <div class="clearfix" id="header">
+          <div id="logo">
+            <!-- <a href="/"><img src="/images/logo.png" alt="" /></a> -->
+            <h1 class="pageTitle">
+              <a href="/">Finagle</a>
+              <!-- <span class='subtitle'>&mdash; a weblog</span> -->
+            </h1>
+            <h2>Changing the world would be easier if I had the source code.</h2>
+          </div>
+          <div id="search"></div>
+        </div>
+        <div id="content">
+  <div id="maincol">
+    <div id="mc2">
+
+      <div class="post">
+        <div class="post-title"><h1>CouchDB: Frankie Says Relax</h1></div>
+        <p class="auth">Posted by code_monkey_steve,
+          <span class="typo_date" title="2009/05/12">2009-05-12 00:00:00 -0700</span></p>
+        <div class="post-body">
+        <p>I&#8217;m falling in love (or at least lust) with <a href="http://couchdb.apache.org/">CouchDB</a>, especially after seeing this <a href="http://aac2009.confreaks.com/07-feb-2009-16-00-relaxing-with-couchdb-will-leinweber.html">presentation at <span class="caps">AAC</span></a> and this <a href="http://barkingiguana.com/2008/08/30/jan-lehnardt-talks-to-the-bbc-about-couchdb">presentation for the <span class="caps">BBC</span></a>.  My summary: <span class="caps">JSON</span> document storage, sliced-and-diced with Javascript <a href="http://en.wikipedia.org/wiki/Map_reduce">MapReduce</a>, all served on a RESTful platter.</p>
+<p>As a long-time <span class="caps">XML</span> fanboy, the lack of schema in <span class="caps">JSON</span> makes me a bit twitchy, and using Javascript as a query language just looks a lttle wrong.  But I see the advantages to the document-centric model (versioning, replication, access control) and MapReduce is definitely the Wave of the <del>Future</del> Present.  It looks like you can encapsulate all of your model logic in views, so I&#8217;m not sure if an explicit schema is really even necessary.  The more I learn about <a href="http://upstream-berlin.com/2009/03/31/the-case-of-activerecord-vs-couchdb/">That Way of doing things</a>, the more it grows on me.</p>
+<p>So how do we make CouchDB play nicely with Rails?  I first tried <a href="http://github.com/arunthampi/activecouch">activecouch</a>, but found its lack of Ruby-type casts and one-database-per-model scheme irritating.  <a href="http://github.com/langalex/couch_potato">couch_potato</a> definitely looks slicker, but there seems to be quite a few  <a href="http://github.com/search?type=Repositories&amp;language=rb&amp;q=couchdb">other CouchDB interfaces</a> out there that might be just as good or better.  I see this as a good sign that many others also see CouchDB&#8217;s potential, and are experimenting with ways to deal with it in a Ruby Way.</p>
+        </div>
+        
+          <p class="meta">
+            Tags: couchdb
+          </p>
+        
+        <div id="disqus_thread"></div>
+      </div>
+
+    </div>
+  </div>
+  <div id="subcol">
+    <div class="bt"><div></div></div>
+    <div id="sc2">
+      <div class="sidebar-node">
+  <h3>Related</h3>
+    <ul class="counts">
+      
+        
+      
+        
+          <li><a href="/2010/10/take-my-money-please.html">Take my money, please!</a></li>
+        
+      
+        
+          <li><a href="/2010/01/json-and-the-args-or-not.html">JSON and the Args (or Not)</a></li>
+        
+      
+        
+          <li><a href="/2009/07/i-hate-shoulda-but-i-blame-test-unit.html">I Hate Shoulda (But I Blame Test::Unit)</a></li>
+        
+      
+        
+          <li><a href="/2006/07/a-few-of-my-favorite-things.html">A Few of My Favorite Things</a></li>
+        
+      
+        
+          <li><a href="/2006/09/linking-outside-of-the-box-optimizing-ruby-with-c-c.html">Linking Outside of the Box: Optimizing Ruby with C/C++</a></li>
+        
+      
+        
+          <li><a href="/2009/05/couch-trouble.html">Couch Trouble</a></li>
+        
+      
+        
+          <li><a href="/2009/11/long-time-no-blog.html">Long Time, No Blog</a></li>
+        
+      
+        
+          <li><a href="/2009/04/seattle-rb-and-goruco-wisdom.html">Seattle.rb and GoRuCo Wisdom</a></li>
+        
+      
+        
+          <li><a href="/2007/03/back-on-rails.html">Back on Rails</a></li>
+        
+      
+        
+          <li><a href="/2006/09/odin.html">ODIN: Secure P2P on the Web</a></li>
+        
+      
+    </ul>
+</div>
+
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+  var disqus_shortname = 'finagle';
+  var disqus_identifier = '';
+  var disqus_url = 'http://finagle.org/2009/05/couchdb-frankie-says-relax.html';
+
+  (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+        <div id="footer">
+          <p>
+            <a href="http://validator.w3.org/check/referer" title="Validates this page">XHTML</a>,
+            <a href="http://jigsaw.w3.org/css-validator/check/referer?warning=no&amp;profile=css2" title="Validates the CSS on this page.">CSS</a>.
+            Template by <a href="http://www.soniciq.com" title="SonicIQ - Website Development">SonicIQ</a>.
+            Blog comments powered by <a href="http://disqus.com" class="dsq-brlink">Disqus</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Google Analytics -->
+<script type="text/javascript">
+  var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+  document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+  try {
+    var pageTracker = _gat._getTracker("UA-10834046-1");
+    pageTracker._trackPageview();
+  } catch(err) {}
+</script>
+
+</body>
+</html>
