@@ -6,7 +6,7 @@ layout: index
     {% when 1 %}
       {% include post_list_item.html %}
     {% when 2 %}
-      <h2>Next post: <a href="{{post.url}}">"{{post.title}}"</a> ...</h2>
+      <h2>Previous post: <a href="{{post.url}}">"{{post.title}}"</a> ...</h2>
   {% endcase %}
 {% endfor %}
 

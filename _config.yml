@@ -11,5 +11,5 @@ pygments: true
 
 permalink: /:year/:month/:title.html
 url: http://finagle.org
-exclude: Gemfile Gemfile.lock vendor config.ru lucid finagle.kdev4
+exclude: lib spec vendor views  Gemfile Gemfile.lock Rakefile config.ru lucid finagle.kdev4 comics.rb
 
