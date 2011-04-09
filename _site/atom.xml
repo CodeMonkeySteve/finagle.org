@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
  <title>Finagle</title>
- <link href="/atom.xml" rel="self"/>
- <link href="/"/>
- <updated>2011-04-02T13:17:10-07:00</updated>
- <id>/</id>
+ <link href="http://finagle.org/atom.xml" rel="self"/>
+ <link href="http://finagle.org/"/>
+ <updated>2011-04-08T21:17:36-07:00</updated>
+ <id>http://finagle.org/</id>
  <author>
    <name>Steve Sloan</name>
    <email>steve@finagle.org</email>
@@ -14,9 +14,9 @@
  
  <entry>
    <title>Back from the Dead</title>
-   <link href="/2011/03/back-from-the-dead.html"/>
+   <link href="http://finagle.org/2011/03/back-from-the-dead.html"/>
    <updated>2011-03-20T00:00:00-07:00</updated>
-   <id>/2011/03/back-from-the-dead</id>
+   <id>http://finagle.org/2011/03/back-from-the-dead</id>
    <content type="html">&lt;p&gt;Greetings, everyone!  Welcome to my new-and-improved blog.&lt;/p&gt;
 &lt;p&gt;I&amp;#8217;ve decided to merge my coding blog (&amp;#8220;One-Banana Problem&amp;#8221;), which has gone woefully under-updated, with my website (&amp;#8220;finagle.org&amp;#8221;), which is gone woefully under-used, and you&amp;#8217;re now looking at the result.  If you&amp;#8217;re thinking it looks a lot like One-Banana Problem &amp;#8230;&lt;/p&gt;
 &lt;ol&gt;
@@ -44,9 +44,9 @@
  
  <entry>
    <title>Take my money, please!</title>
-   <link href="/2010/10/take-my-money-please.html"/>
+   <link href="http://finagle.org/2010/10/take-my-money-please.html"/>
    <updated>2010-10-12T00:00:00-07:00</updated>
-   <id>/2010/10/take-my-money-please</id>
+   <id>http://finagle.org/2010/10/take-my-money-please</id>
    <content type="html">&lt;p&gt;One of the downsides to being a good web developer is that it makes it really hard to ignore bad web developers.  Ever since I started building commercial websites with an emphasis on usability, I can&amp;#8217;t help but notice when other sites get it completely wrong.  Case in point: credit cards.  Just about every commercial site accepts credit cards, and since that is arguably the only feature that a for-profit site really needs, I would expect a little more thought would be put into it.  But instead, my online shopping experience is often stymied by developers who are apparently either too lazy or too stupid to make it easy for me to &lt;em&gt;give them my money&lt;/em&gt;.  Here are a few of the more annoying mis-features I&amp;#8217;ve run across:&lt;/p&gt;
 &lt;h3&gt;Card number&lt;/h3&gt;
 &lt;ul&gt;
@@ -83,9 +83,9 @@
  
  <entry>
    <title>Autotest and Ruby 1.9.2</title>
-   <link href="/2010/09/autotest-and-ruby-1-9-2.html"/>
+   <link href="http://finagle.org/2010/09/autotest-and-ruby-1-9-2.html"/>
    <updated>2010-09-04T00:00:00-07:00</updated>
-   <id>/2010/09/autotest-and-ruby-1-9-2</id>
+   <id>http://finagle.org/2010/09/autotest-and-ruby-1-9-2</id>
    <content type="html">&lt;p&gt;There&amp;#8217;s a &lt;a href=&quot;http://rubyforge.org/tracker/index.php?func=detail&amp;amp;aid=28113&amp;amp;group_id=419&amp;amp;atid=1678&quot;&gt;bug in autotest&lt;/a&gt; that prevents it from properly finding a project&amp;#8217;s autotest discover file under Ruby 1.9.2.  Until an appropriate fix is made, you can work around it on the command line like so:&lt;/p&gt;
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;sh&quot;&gt;  &lt;span class=&quot;nv&quot;&gt;$ RUBYLIB&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;.&amp;#39;&lt;/span&gt; bundle &lt;span class=&quot;nb&quot;&gt;exec &lt;/span&gt;autotest
 &lt;/code&gt;&lt;/pre&gt;
@@ -94,9 +94,9 @@
  
  <entry>
    <title>Ruby Gets Possessive</title>
-   <link href="/2010/05/ruby-gets-possessive.html"/>
+   <link href="http://finagle.org/2010/05/ruby-gets-possessive.html"/>
    <updated>2010-05-07T00:00:00-07:00</updated>
-   <id>/2010/05/ruby-gets-possessive</id>
+   <id>http://finagle.org/2010/05/ruby-gets-possessive</id>
    <content type="html">&lt;p&gt;I debated whether this code snippet was significant enough to bother blogging about, but it is useful if for no other reason that as an example of one of the great features of Ruby: the ability to reopen any class, even a standard class, and add methods.&lt;/p&gt;
 &lt;p&gt;In this case, we needed a method to apply the English rules for the possessive apostrophy to a string, e.g. a person&amp;#8217;s name.  I looked-up the rules on &lt;a href=&quot;http://en.wikipedia.org/wiki/Apostrophe#Singular_nouns_ending_with_an_.E2.80.9Cs.E2.80.9D_or_.E2.80.9Cz.E2.80.9D_sound&quot;&gt;Wikipedia&lt;/a&gt; and coded up the following three-liner:&lt;/p&gt;
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt;
@@ -116,9 +116,9 @@
  
  <entry>
    <title>Swinging from Tree to Tree</title>
-   <link href="/2010/02/swing-from-tree-to-tree.html"/>
+   <link href="http://finagle.org/2010/02/swing-from-tree-to-tree.html"/>
    <updated>2010-02-27T00:00:00-08:00</updated>
-   <id>/2010/02/swing-from-tree-to-tree</id>
+   <id>http://finagle.org/2010/02/swing-from-tree-to-tree</id>
    <content type="html">&lt;p&gt;Last time I updated this blog it was the night before starting a new job, and on the eve of starting yet-another new job, I thought it would be a good time to recap.&lt;/p&gt;
 &lt;h3&gt;The Old&lt;/h3&gt;
 &lt;p&gt;At the beginning of the year I started work at &lt;a href=&quot;http://sponsaurus.com/&quot;&gt;Sponsaurus&lt;/a&gt;, a little sports-sponsorship management start-up working out of the &lt;a href=&quot;http://startpad.org/&quot;&gt;StartPad&lt;/a&gt; offices.  The idea was good, the people were great, and building a site from scratch using the latest-and-greatest toys was addictively fun.  Things that were &amp;#8220;20 pounds of awesome in a 10 pound bag&amp;#8221;&amp;nbsp;:&lt;/p&gt;
@@ -136,9 +136,9 @@ John Nunemaker puts it best in &lt;a href=&quot;http://railstips.org/blog/archiv
  
  <entry>
    <title>JSON and the Args (or Not)</title>
-   <link href="/2010/01/json-and-the-args-or-not.html"/>
+   <link href="http://finagle.org/2010/01/json-and-the-args-or-not.html"/>
    <updated>2010-01-01T00:00:00-08:00</updated>
-   <id>/2010/01/json-and-the-args-or-not</id>
+   <id>http://finagle.org/2010/01/json-and-the-args-or-not</id>
    <content type="html">&lt;p&gt;(Admittedly not my best work, but it&amp;#8217;s hard coming up with &lt;span class=&quot;caps&quot;&gt;JSON&lt;/span&gt; puns)&lt;/p&gt;
 &lt;p&gt;Playing with &lt;span class=&quot;caps&quot;&gt;JSON&lt;/span&gt; Document Stores has led me down the path to a few other exciting &lt;span class=&quot;caps&quot;&gt;JSON&lt;/span&gt; toys.  The first is &amp;#8230;&lt;/p&gt;
 &lt;h1&gt;&lt;a href=&quot;http://json-schema.org&quot;&gt;&lt;span class=&quot;caps&quot;&gt;JSON&lt;/span&gt; Schema&lt;/a&gt;&lt;/h1&gt;
@@ -152,9 +152,9 @@ John Nunemaker puts it best in &lt;a href=&quot;http://railstips.org/blog/archiv
  
  <entry>
    <title>Long Time, No Blog</title>
-   <link href="/2009/11/long-time-no-blog.html"/>
+   <link href="http://finagle.org/2009/11/long-time-no-blog.html"/>
    <updated>2009-11-23T00:00:00-08:00</updated>
-   <id>/2009/11/long-time-no-blog</id>
+   <id>http://finagle.org/2009/11/long-time-no-blog</id>
    <content type="html">&lt;p&gt;It seems to work out that when I&amp;#8217;m most busy coding, I have the least time to blog (and vice-versa).  That&amp;#8217;s my official excuse for it being two months since my last update: work has been busy.&lt;/p&gt;
 &lt;p&gt;First, at the beginning of October, me and the Kashless Krew  went to &lt;a href=&quot;http://www.alohaonrails.com/&quot;&gt;AlohaOnRails&lt;/a&gt;, my first Ruby/Rails conference in sunny (read: &amp;#8220;sweltering&amp;#8221;) O&amp;#8217;ahu, Hawai&amp;#8217;i:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;/assets/2009/11/23/8824_814865316318_10700776_46239972_2328810_n.jpg&quot; width=&quot;302&quot; height=&quot;227&quot;/&gt;&lt;/p&gt;
@@ -165,9 +165,9 @@ John Nunemaker puts it best in &lt;a href=&quot;http://railstips.org/blog/archiv
  
  <entry>
    <title>Safe Mailing with mail_safe</title>
-   <link href="/2009/09/safe-mailing-with-safe_mail.html"/>
+   <link href="http://finagle.org/2009/09/safe-mailing-with-safe_mail.html"/>
    <updated>2009-09-21T00:00:00-07:00</updated>
-   <id>/2009/09/safe-mailing-with-safe_mail</id>
+   <id>http://finagle.org/2009/09/safe-mailing-with-safe_mail</id>
    <content type="html">&lt;p&gt;Working on a production website can be a bit nerve-wracking, especially when it comes to testing features that send email as a side effect: one little bug could wind up spamming all of your precious users.  Of course, Rails has the basic safety feature of simply disabling mail delivery in certain environments (i.e. test and development), but that&amp;#8217;s no good because sometimes you do want to test that mail is actually delivered, just without having to worry that it&amp;#8217;s delivered to live users.&lt;/p&gt;
 &lt;p&gt;Enter &lt;a href=&quot;http://github.com/myronmarston/mail_safe&quot;&gt;mail_safe&lt;/a&gt;, a handy little gem written by my co-worker Myron.  Instead of disabling mail delivery environment-wide, mail_safe allows you to define one or more domains for which mail should be delivered, and a catch-all address for those that shouldn&amp;#8217;t.  This allows for testing with a real account (if it&amp;#8217;s in the appropriate domain), while still keeping you secure against unintentional spam.&lt;/p&gt;
 &lt;p&gt;Once you&amp;#8217;ve started using it, you&amp;#8217;ll wonder how you ever slept soundly without it.  It&amp;#8217;s the sort of thing that should probably be included in the Rails core (&lt;span class=&quot;caps&quot;&gt;IMNSHO&lt;/span&gt;).&lt;/p&gt;</content>
@@ -175,9 +175,9 @@ John Nunemaker puts it best in &lt;a href=&quot;http://railstips.org/blog/archiv
  
  <entry>
    <title>String Conversions in Ruby</title>
-   <link href="/2009/09/string-conversions-in-ruby.html"/>
+   <link href="http://finagle.org/2009/09/string-conversions-in-ruby.html"/>
    <updated>2009-09-17T00:00:00-07:00</updated>
-   <id>/2009/09/string-conversions-in-ruby</id>
+   <id>http://finagle.org/2009/09/string-conversions-in-ruby</id>
    <content type="html">&lt;p&gt;Here&amp;#8217;s a tip so simple and elegant it&amp;#8217;s amazing I ever got along without it.  Consider &lt;code&gt;String#to_f&lt;/code&gt;:&lt;/p&gt;
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;irb&quot;&gt;&lt;span class=&quot;go&quot;&gt;--&amp;gt; &amp;#39;12.34&amp;#39;.to_f&lt;/span&gt;
 &lt;span class=&quot;go&quot;&gt;==&amp;gt; 12.34&lt;/span&gt;
@@ -198,9 +198,9 @@ John Nunemaker puts it best in &lt;a href=&quot;http://railstips.org/blog/archiv
  
  <entry>
    <title>I Hate Shoulda (But I Blame Test::Unit)</title>
-   <link href="/2009/07/i-hate-shoulda-but-i-blame-test-unit.html"/>
+   <link href="http://finagle.org/2009/07/i-hate-shoulda-but-i-blame-test-unit.html"/>
    <updated>2009-07-27T00:00:00-07:00</updated>
-   <id>/2009/07/i-hate-shoulda-but-i-blame-test-unit</id>
+   <id>http://finagle.org/2009/07/i-hate-shoulda-but-i-blame-test-unit</id>
    <content type="html">&lt;p&gt;I hate Shoulda.&lt;/p&gt;
 &lt;p&gt;But I blame Test::Unit.&lt;/p&gt;
 &lt;p&gt;Because Test::Unit can&amp;#8217;t scale.&lt;/p&gt;
@@ -382,9 +382,9 @@ Finished in 34.538012 seconds.
  
  <entry>
    <title>All Your (Data)Base ...</title>
-   <link href="/2009/06/all-your-data-base.html"/>
+   <link href="http://finagle.org/2009/06/all-your-data-base.html"/>
    <updated>2009-06-16T00:00:00-07:00</updated>
-   <id>/2009/06/all-your-data-base</id>
+   <id>http://finagle.org/2009/06/all-your-data-base</id>
    <content type="html">&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/greenem/11696663/&quot;&gt;&lt;img src=&quot;/assets/2009/6/16/network-graph.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;After failing to make &lt;a href=&quot;http://couchdb.apache.org/&quot;&gt;CouchDB&lt;/a&gt; doing anything useful, and being completely unwilling to go back to &lt;a href=&quot;http://en.wikipedia.org/wiki/Sql&quot;&gt;1974&lt;/a&gt; I decided to go back and revisit my assumptions.  Both of my current home projects are essentially attempts to treat real-world interactions as &lt;a href=&quot;http://en.wikipedia.org/wiki/Routing&quot;&gt;Routing Problems&lt;/a&gt;, but after doing some research, I decided that was one wheel I didn&amp;#8217;t even want to attempt to reinvent (graph theory is not my specialty).&lt;/p&gt;
 &lt;p&gt;Somewhere along the way, I discovered what I really needed was a &lt;em&gt;Graph Database&lt;/em&gt;.  That led me to apparently the only significant implementation: &lt;a href=&quot;http://neo4j.org/&quot;&gt;Neo4j&lt;/a&gt;, an embedded Java graph database. But I&amp;#8217;d rather juggle flaming porcupines than touch Java again &amp;#8230; and thanks to &lt;a href=&quot;http://en.wikipedia.org/wiki/Jruby&quot;&gt;JRuby&lt;/a&gt; and the &lt;a href=&quot;http://github.com/andreasronge/neo4j&quot;&gt;neo4j gem&lt;/a&gt;, I don&amp;#8217;t have to!  Yay!&lt;/p&gt;
@@ -393,9 +393,9 @@ Finished in 34.538012 seconds.
  
  <entry>
    <title>Couch Trouble</title>
-   <link href="/2009/05/couch-trouble.html"/>
+   <link href="http://finagle.org/2009/05/couch-trouble.html"/>
    <updated>2009-05-26T00:00:00-07:00</updated>
-   <id>/2009/05/couch-trouble</id>
+   <id>http://finagle.org/2009/05/couch-trouble</id>
    <content type="html">&lt;p&gt;I&amp;#8217;ve been wrangling with CouchDB for a few weeks now, and it&amp;#8217;s starting to feel a bit like this:&lt;/p&gt;
 &lt;p&gt;&lt;object width=&quot;425&quot; height=&quot;344&quot;&gt;&lt;param name=&quot;movie&quot; value=&quot;http://www.youtube.com/v/vSTJL1ikxXY&amp;hl=en&amp;fs=1&quot;&gt;&lt;/param&gt;&lt;param name=&quot;allowFullScreen&quot; value=&quot;true&quot;&gt;&lt;/param&gt;&lt;param name=&quot;allowscriptaccess&quot; value=&quot;always&quot;&gt;&lt;/param&gt;&lt;embed src=&quot;http://www.youtube.com/v/vSTJL1ikxXY&amp;hl=en&amp;fs=1&quot; type=&quot;application/x-shockwave-flash&quot; allowscriptaccess=&quot;always&quot; allowfullscreen=&quot;true&quot; width=&quot;425&quot; height=&quot;344&quot;&gt;&lt;/embed&gt;&lt;/object&gt;&lt;/p&gt;
 &lt;p&gt;(Ooh, my first embedded video.  Feel the Web 2.0 Awesome-ness-age-ality).&lt;/p&gt;
@@ -410,9 +410,9 @@ Finished in 34.538012 seconds.
  
  <entry>
    <title>CouchDB Testing Tip</title>
-   <link href="/2009/05/couchdb-testing-tip.html"/>
+   <link href="http://finagle.org/2009/05/couchdb-testing-tip.html"/>
    <updated>2009-05-13T00:00:00-07:00</updated>
-   <id>/2009/05/couchdb-testing-tip</id>
+   <id>http://finagle.org/2009/05/couchdb-testing-tip</id>
    <content type="html">&lt;p&gt;Finished my first stab at converting my current toy project from ActiveRecord to CouchDB, and so far so good.  I ran into an issue where associations aren&amp;#8217;t getting saved, but I&amp;#8217;m most likely just doing something stupid.&lt;/p&gt;
 &lt;p&gt;One minor annoyance is that, unlike ActiveRecord, the test database doesn&amp;#8217;t get purged and after a while can get cluttered with randomly-generated fixtures&lt;sup class=&quot;footnote&quot; id=&quot;fnr1&quot;&gt;&lt;a href=&quot;#fn1&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;.  No problem, just drop in this little Rake task to recreate the DB on each run:&lt;/p&gt;
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;&lt;span class=&quot;c1&quot;&gt;# lib/tasks/couchdb.rake&lt;/span&gt;
@@ -431,9 +431,9 @@ Finished in 34.538012 seconds.
  
  <entry>
    <title>CouchDB: Frankie Says Relax</title>
-   <link href="/2009/05/couchdb-frankie-says-relax.html"/>
+   <link href="http://finagle.org/2009/05/couchdb-frankie-says-relax.html"/>
    <updated>2009-05-12T00:00:00-07:00</updated>
-   <id>/2009/05/couchdb-frankie-says-relax</id>
+   <id>http://finagle.org/2009/05/couchdb-frankie-says-relax</id>
    <content type="html">&lt;p&gt;I&amp;#8217;m falling in love (or at least lust) with &lt;a href=&quot;http://couchdb.apache.org/&quot;&gt;CouchDB&lt;/a&gt;, especially after seeing this &lt;a href=&quot;http://aac2009.confreaks.com/07-feb-2009-16-00-relaxing-with-couchdb-will-leinweber.html&quot;&gt;presentation at &lt;span class=&quot;caps&quot;&gt;AAC&lt;/span&gt;&lt;/a&gt; and this &lt;a href=&quot;http://barkingiguana.com/2008/08/30/jan-lehnardt-talks-to-the-bbc-about-couchdb&quot;&gt;presentation for the &lt;span class=&quot;caps&quot;&gt;BBC&lt;/span&gt;&lt;/a&gt;.  My summary: &lt;span class=&quot;caps&quot;&gt;JSON&lt;/span&gt; document storage, sliced-and-diced with Javascript &lt;a href=&quot;http://en.wikipedia.org/wiki/Map_reduce&quot;&gt;MapReduce&lt;/a&gt;, all served on a RESTful platter.&lt;/p&gt;
 &lt;p&gt;As a long-time &lt;span class=&quot;caps&quot;&gt;XML&lt;/span&gt; fanboy, the lack of schema in &lt;span class=&quot;caps&quot;&gt;JSON&lt;/span&gt; makes me a bit twitchy, and using Javascript as a query language just looks a lttle wrong.  But I see the advantages to the document-centric model (versioning, replication, access control) and MapReduce is definitely the Wave of the &lt;del&gt;Future&lt;/del&gt; Present.  It looks like you can encapsulate all of your model logic in views, so I&amp;#8217;m not sure if an explicit schema is really even necessary.  The more I learn about &lt;a href=&quot;http://upstream-berlin.com/2009/03/31/the-case-of-activerecord-vs-couchdb/&quot;&gt;That Way of doing things&lt;/a&gt;, the more it grows on me.&lt;/p&gt;
 &lt;p&gt;So how do we make CouchDB play nicely with Rails?  I first tried &lt;a href=&quot;http://github.com/arunthampi/activecouch&quot;&gt;activecouch&lt;/a&gt;, but found its lack of Ruby-type casts and one-database-per-model scheme irritating.  &lt;a href=&quot;http://github.com/langalex/couch_potato&quot;&gt;couch_potato&lt;/a&gt; definitely looks slicker, but there seems to be quite a few  &lt;a href=&quot;http://github.com/search?type=Repositories&amp;amp;language=rb&amp;amp;q=couchdb&quot;&gt;other CouchDB interfaces&lt;/a&gt; out there that might be just as good or better.  I see this as a good sign that many others also see CouchDB&amp;#8217;s potential, and are experimenting with ways to deal with it in a Ruby Way.&lt;/p&gt;</content>
@@ -441,9 +441,9 @@ Finished in 34.538012 seconds.
  
  <entry>
    <title>Word of the Day: Connascence</title>
-   <link href="/2009/05/word-of-the-day.html"/>
+   <link href="http://finagle.org/2009/05/word-of-the-day.html"/>
    <updated>2009-05-05T00:00:00-07:00</updated>
-   <id>/2009/05/word-of-the-day</id>
+   <id>http://finagle.org/2009/05/word-of-the-day</id>
    <content type="html">&lt;p&gt;&lt;a href=&quot;http://www.thefreedictionary.com/Connascence&quot;&gt;Connascence&lt;/a&gt;&lt;br /&gt;
 &lt;blockquote&gt;&lt;br /&gt;
 Con-nas-cence&lt;br /&gt;
@@ -456,9 +456,9 @@ n.	1.	The common birth of two or more at the same time; production of two or mor
  
  <entry>
    <title>Seattle.rb and GoRuCo Wisdom</title>
-   <link href="/2009/04/seattle-rb-and-goruco-wisdom.html"/>
+   <link href="http://finagle.org/2009/04/seattle-rb-and-goruco-wisdom.html"/>
    <updated>2009-04-29T00:00:00-07:00</updated>
-   <id>/2009/04/seattle-rb-and-goruco-wisdom</id>
+   <id>http://finagle.org/2009/04/seattle-rb-and-goruco-wisdom</id>
    <content type="html">&lt;p&gt;Finally got around to attending the &lt;a href=&quot;http://www.seattlerb.org/&quot;&gt;Seattle Ruby Brigade&lt;/a&gt; last night, although I feel a bit silly about forgetting to bring my laptop to &amp;#8220;Hack Night&amp;#8221;.  Still, I had interesting conversations with &lt;a href=&quot;http://rwldesign.com/&quot;&gt;Ryan Lonac&lt;/a&gt; about all things Ruby, with someone (a Jennifer) who could actually make use of MP3 validation if I added it to &lt;a href=&quot;http://github.com/CodeMonkeySteve/assert_valid_content&quot;&gt;assert_valid_content&lt;/a&gt;, and with a couple of other cool people who&amp;#8217;s names my brain was too feeble to retain.&lt;/p&gt;
 &lt;p&gt;Still working my way through the &lt;a href=&quot;http://podcast.rubyonrails.org/&quot;&gt;Ruby on Rails Podcast&lt;/a&gt; (up up to 2009 already!).  It doesn&amp;#8217;t help that I found the &lt;a href=&quot;http://railsenvy.com/&quot;&gt;Rails Envy Podcast&lt;/a&gt;, which is another interesting time-sink.  Along the way I also discovered &lt;a href=&quot;http://goruco2008.confreaks.com/index.html&quot;&gt;video from GoRuCo 2008&lt;/a&gt; and found the presentation from &amp;quot;Giles Bowkett &amp;quot;:http://goruco2008.confreaks.com/02_bowkett.html equal parts brilliant and hilarious.&lt;/p&gt;
 &lt;p&gt;Finally, I&amp;#8217;ve refactored my resume to show of my Mad Ruby Skillz a bit more.  If anyone out there knows anyone out there who&amp;#8217;s looking for a Serious Ruby/Rails Geek, please pass it along and have them drop me a line.&lt;/p&gt;</content>
@@ -466,9 +466,9 @@ n.	1.	The common birth of two or more at the same time; production of two or mor
  
  <entry>
    <title>Word of the Day: Duck-punching</title>
-   <link href="/2009/04/word-of-the-day.html"/>
+   <link href="http://finagle.org/2009/04/word-of-the-day.html"/>
    <updated>2009-04-28T00:00:00-07:00</updated>
-   <id>/2009/04/word-of-the-day</id>
+   <id>http://finagle.org/2009/04/word-of-the-day</id>
    <content type="html">&lt;p&gt;I may be showing how out of date I am with the Rubyverse, but I just discovered &lt;a href=&quot;http://en.wikipedia.org/wiki/Duck_punching&quot;&gt;Duck Punching&lt;/a&gt;:&lt;/p&gt;
 &lt;blockquote&gt;Well, I was just totally sold by Adam, the idea being that if it walks like a duck and talks like a duck, itâ€™s a duck, right? So if this duck is not giving you the noise that you want, youâ€™ve got to just punch that duck until it returns what you expect.&lt;br /&gt;
 â€“ Patrick Ewing&lt;/blockquote&gt;
@@ -478,9 +478,9 @@ n.	1.	The common birth of two or more at the same time; production of two or mor
  
  <entry>
    <title>Ruby or Bust!</title>
-   <link href="/2009/04/ruby-or-bust.html"/>
+   <link href="http://finagle.org/2009/04/ruby-or-bust.html"/>
    <updated>2009-04-24T00:00:00-07:00</updated>
-   <id>/2009/04/ruby-or-bust</id>
+   <id>http://finagle.org/2009/04/ruby-or-bust</id>
    <content type="html">&lt;p&gt;&amp;#8230; or, er, Something Else!&lt;/p&gt;
 &lt;p&gt;If you haven&amp;#8217;t noticed the trend, the fact that I&amp;#8217;m updating this blog means I&amp;#8217;m once again between jobs.  I&amp;#8217;ve decided that I&amp;#8217;m getting sick of C/C++, and really need a daily dose of sweet, sweet Ruby Goodness.  To that end, I&amp;#8217;m on the hunt for what will probably end up being a Rails gig, preferably closer to home than downtown Seattle.&lt;/p&gt;
 &lt;p&gt;So in between job googling, I&amp;#8217;m polishing my Rails skills a little and catching up on (two years of) the &lt;a href=&quot;http://podcast.rubyonrails.org/&quot;&gt;Ruby on Rails Podcast&lt;/a&gt; .&lt;/p&gt;</content>
@@ -488,9 +488,9 @@ n.	1.	The common birth of two or more at the same time; production of two or mor
  
  <entry>
    <title>Happy Independence Day!</title>
-   <link href="/2008/07/happy-independence-day.html"/>
+   <link href="http://finagle.org/2008/07/happy-independence-day.html"/>
    <updated>2008-07-02T00:00:00-07:00</updated>
-   <id>/2008/07/happy-independence-day</id>
+   <id>http://finagle.org/2008/07/happy-independence-day</id>
    <content type="html">&lt;blockquote&gt;
 &lt;p&gt;&lt;i&gt;&amp;#8220;The second day of July, 1776, will be the most memorable epoch in the history of America. I am apt to believe that it will be celebrated by succeeding generations as the great anniversary festival.&amp;#8221;&lt;br /&gt;
 &amp;#8212; John Adams&lt;br /&gt;
@@ -501,9 +501,9 @@ n.	1.	The common birth of two or more at the same time; production of two or mor
  
  <entry>
    <title>Monkey Toy</title>
-   <link href="/2008/05/monkey-toy.html"/>
+   <link href="http://finagle.org/2008/05/monkey-toy.html"/>
    <updated>2008-05-26T00:00:00-07:00</updated>
-   <id>/2008/05/monkey-toy</id>
+   <id>http://finagle.org/2008/05/monkey-toy</id>
    <content type="html">&lt;p&gt;I have recently become the proud owner of a &lt;a href=&quot;http://en.wikipedia.org/wiki/Nokia_N810&quot;&gt;Nokia 810 Internet Tablet&lt;/a&gt;, and it is truly a sweet bit o&amp;#8217; hardware.  It&amp;#8217;s essentially a pocket computer, with (almost) all of the features of a laptop PC (yes, it runs Linux).  In fact, &lt;span class=&quot;caps&quot;&gt;SWMBO&lt;/span&gt; (who&amp;#8217;s had one for quite a while) has been running &lt;span class=&quot;caps&quot;&gt;KDE&lt;/span&gt; on it. I suspect one factor in my acquiring it is the increased chance of customer bug fixes for her (not that there&amp;#8217;s anything wrong with that!).&lt;/p&gt;
 &lt;p&gt;So, as much as I like Qt, I haven&amp;#8217;t yet bothered installing &lt;span class=&quot;caps&quot;&gt;KDE&lt;/span&gt;, and instead have been looking into setting up the &lt;a href=&quot;http://scratchbox.org/documentation/user/scratchbox-1.0/&quot;&gt;cross-compiling environment&lt;/a&gt;&lt;br /&gt;
  for &lt;a href=&quot;http://maemo.org/development/documentation/tutorials/maemo_4-0_tutorial.html&quot;&gt;Maemo&lt;/a&gt;, the built-in desktop.  Once I can get Hello World running, I can look into fixing &lt;span class=&quot;caps&quot;&gt;DPMI&lt;/span&gt; &amp;#8230; ;)&lt;/p&gt;</content>
@@ -511,9 +511,9 @@ n.	1.	The common birth of two or more at the same time; production of two or mor
  
  <entry>
    <title>Git is Awsome</title>
-   <link href="/2008/05/git-is-awsome.html"/>
+   <link href="http://finagle.org/2008/05/git-is-awsome.html"/>
    <updated>2008-05-26T00:00:00-07:00</updated>
-   <id>/2008/05/git-is-awsome</id>
+   <id>http://finagle.org/2008/05/git-is-awsome</id>
    <content type="html">&lt;p&gt;I&amp;#8217;ve spent the past month or so learning the ins and outs of &lt;a href=&quot;http://git.or.cz/&quot;&gt;Git&lt;/a&gt;, and am in the process of converting from Subversion, both at work and for my personal projects.  Others &lt;a href=&quot;http://tomayko.com/writings/the-thing-about-git&quot;&gt;have written&lt;/a&gt; about &lt;a href=&quot;http://blog.madism.org/index.php/2007/09/09/138-git-awsome-ness-git-rebase-interactive&quot;&gt;Git&amp;#8217;s awesomeness&lt;/a&gt;, and there are various of &lt;a href=&quot;http://git.or.cz/gitwiki/GitSvnComparsion&quot;&gt;comparisons with Subversion&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;However, I think that comparing Git with Subversion as Version Control Systems is entirely missing the point:  Git is a Source Code Management tool, although it can also be used for version control.  The point of GIt is not to track the various versions of a project, but a connected series of &lt;em&gt;individual changes&lt;/em&gt; made by individual developers.  The change- and developer-centric view also makes for meaningful collaboration, instead of restricting access to a central Subversion server.&lt;/p&gt;
 &lt;p&gt;It is, undoubtedly, the New Hotness, and every coder should use it (or some other real &lt;span class=&quot;caps&quot;&gt;SCM&lt;/span&gt; tool).&lt;/p&gt;</content>
@@ -521,9 +521,9 @@ n.	1.	The common birth of two or more at the same time; production of two or mor
  
  <entry>
    <title>Safety Feature</title>
-   <link href="/2008/05/safety-feature.html"/>
+   <link href="http://finagle.org/2008/05/safety-feature.html"/>
    <updated>2008-05-11T00:00:00-07:00</updated>
-   <id>/2008/05/safety-feature</id>
+   <id>http://finagle.org/2008/05/safety-feature</id>
    <content type="html">&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;&lt;span class=&quot;nb&quot;&gt;require&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;mathn&amp;#39;&lt;/span&gt;
 &lt;span class=&quot;kp&quot;&gt;loop&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt;
   &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Enter an 11 digit prime number to continue:&amp;quot;&lt;/span&gt;
@@ -537,18 +537,18 @@ n.	1.	The common birth of two or more at the same time; production of two or mor
  
  <entry>
    <title>Not Dead Yet</title>
-   <link href="/2007/10/not-dead-yet.html"/>
+   <link href="http://finagle.org/2007/10/not-dead-yet.html"/>
    <updated>2007-10-28T00:00:00-07:00</updated>
-   <id>/2007/10/not-dead-yet</id>
+   <id>http://finagle.org/2007/10/not-dead-yet</id>
    <content type="html">&lt;p&gt;I haven&amp;#8217;t updated this blog in an embarrassingly long  time, but I can put the blame on Typo and/or DreamHost: posting an article would consistently and silently fail.  Meh.&lt;/p&gt;
 &lt;p&gt;So I&amp;#8217;m experimenting with &lt;a href=&quot;http://mephistoblog.com/&quot;&gt;Mephisto&lt;/a&gt; instead, and while it doesn&amp;#8217;t seem to some of the nice sidebar features, it does at least work, and was fairly easy to setup.  Hopefully now I&amp;#8217;ll actually be able to get some content up here.&lt;/p&gt;</content>
  </entry>
  
  <entry>
    <title>Back on Rails</title>
-   <link href="/2007/03/back-on-rails.html"/>
+   <link href="http://finagle.org/2007/03/back-on-rails.html"/>
    <updated>2007-03-01T00:00:00-08:00</updated>
-   <id>/2007/03/back-on-rails</id>
+   <id>http://finagle.org/2007/03/back-on-rails</id>
    <content type="html">&lt;p&gt;As of today, I&amp;#8217;ve been with &lt;a href=&quot;http://vigilos.com&quot;&gt;Vigilos, Inc.&lt;/a&gt; for exactly four months, a fact I was reminded of when the password expiration policy kicked in and I had to track down the admin to reset it.  While my days have been spent slogging through old crappy C code (and replacing it with shiny new C++ code), I been spend&lt;br /&gt;
 ing evenings and weekends getting reacquainted with Ruby on Rails.  This has been inspired in large part by the Second Edition of &lt;a href=&quot;http://www.amazon.com/gp/amabot/?pf_rd_url=%2Fgp%2Fproduct%2F0974514055%2Fref%3Dpd_cp_b_title%2F102-6241858-0226508&amp;amp;pf_rd_p=252362401&amp;amp;pf_rd_s=center-41&amp;amp;pf_rd_t=201&amp;amp;pf_rd_i=0977616630&amp;amp;pf_rd_m=ATVPDKIKX0DER&amp;amp;pf_rd_r=00B19H2M1TJWAHKNJJ56&quot;&gt;Agile Web Development with Rails&lt;/a&gt;, an excellent book, both as tutorial and reference, and I highly recommend it to anyone doing Rails development.&lt;/p&gt;
 &lt;p&gt;After perusing the book cover-to-cover on my daily bus commute, I decided it was time to go back and rewrite my nominal web site (&lt;a href=&quot;http://finagle.org&quot;&gt;finagle.org&lt;/a&gt;).  This was my first Rails project, back when Rails was only up to version &lt;em&gt;0.10&lt;/em&gt;, and had quite a bit of cruft due to the ancient version (lots of stuff has changed since then) and my own lack of Ruby/Rails experience. Starting from scratch, following the book closely, and salvaging chunks of code from the original version, produced a much smaller and cleaner implementation.&lt;/p&gt;
@@ -565,9 +565,9 @@ ing evenings and weekends getting reacquainted with Ruby on Rails.  This has bee
  
  <entry>
    <title>Gainful Employment</title>
-   <link href="/2006/11/gainful-employment.html"/>
+   <link href="http://finagle.org/2006/11/gainful-employment.html"/>
    <updated>2006-11-12T00:00:00-08:00</updated>
-   <id>/2006/11/gainful-employment</id>
+   <id>http://finagle.org/2006/11/gainful-employment</id>
    <content type="html">&lt;p&gt;After a luxurious three months of unemployment, I have once agained joined the ranks of the gainfully employed.  As of Nov. 1 I have accepted a position as a C/C++ coder for &lt;a href=&quot;http://vigilos.com&quot;&gt;Vigilos, Inc.&lt;/a&gt;, who specializes in automated security systems (intrusion detection and access control).&lt;/p&gt;
 &lt;p&gt;I&amp;#8217;ve now worked for Vigilos for 8 days, and so far I&amp;#8217;m loving it.  Management and the other coders are clueful and in no way pointy-haired.  I&amp;#8217;ve gotten positive reactions to all of my suggestions, which just means we have more good ideas than we have time to implement them.  The codebase is fairly obselete (most the the technologies are over a generation old), so there&amp;#8217;s lots of room to explore things like object recognition and tracking, Machine Learning, stereoopsis, and digital signatures.  And one day I hope to get them to replace the ancient Java client with a real Ruby on Rails web UI.&lt;/p&gt;
 &lt;p&gt;While this means I&amp;#8217;ll have more cash for toys and gear, I&amp;#8217;ll also have less time for blogging, among other things.  Also, you can expect that, at least for the foreseeable future, most of my blogging will be C++ related (at least until I can find opportunities to introduce Vigilos to Ruby).  Stay tuned &amp;#8230;&lt;/p&gt;</content>
@@ -575,9 +575,9 @@ ing evenings and weekends getting reacquainted with Ruby on Rails.  This has bee
  
  <entry>
    <title>Bug vs. Feature</title>
-   <link href="/2006/10/bug-vs-feature.html"/>
+   <link href="http://finagle.org/2006/10/bug-vs-feature.html"/>
    <updated>2006-10-20T00:00:00-07:00</updated>
-   <id>/2006/10/bug-vs-feature</id>
+   <id>http://finagle.org/2006/10/bug-vs-feature</id>
    <content type="html">&lt;p&gt;A common topic of &lt;del&gt;argument&lt;/del&gt; debate amongst coders has always been whether a particular set of behavior constitutes a bug or a &lt;a href=&quot;http://www.jargon.net/jargonfile/f/feature.html&quot;&gt;feature&lt;/a&gt; (or even a &lt;a href=&quot;http://www.jargon.net/jargonfile/m/misfeature.html&quot;&gt;misfeature&lt;/a&gt;).  After many years of contemplation (and argument), I have come up with a test which I believe can make a definitive classification:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;A set of behaviors is a &lt;strong&gt;feature&lt;/strong&gt; &lt;em&gt;if and only if&lt;/em&gt; it can be ignored, disabled, circumvented, disregarded, removed, deactivated or otherwise configured to be completely unnoticeable by the user.  Otherwise, it&amp;#8217;s a &lt;strong&gt;bug&lt;/strong&gt; (or, at best, a misfeature).&lt;/p&gt;
@@ -588,9 +588,9 @@ ing evenings and weekends getting reacquainted with Ruby on Rails.  This has bee
  
  <entry>
    <title>"Luxury!"</title>
-   <link href="/2006/10/luxury.html"/>
+   <link href="http://finagle.org/2006/10/luxury.html"/>
    <updated>2006-10-11T00:00:00-07:00</updated>
-   <id>/2006/10/luxury</id>
+   <id>http://finagle.org/2006/10/luxury</id>
    <content type="html">&lt;p&gt;If you&amp;#8217;re reading my obscure blog, you probably saw the &lt;a href=&quot;http://rss.slashdot.org/~r/Slashdot/slashdot/~3/35616214/article.pl&quot;&gt;article on Slashdot&lt;/a&gt; linking to a &lt;a href=&quot;http://sztywny.titaniumhosting.com/2006/07/23/stiff-asks-great-programmers-answers/&quot;&gt;blog article&lt;/a&gt; where various notable programmers answer questions about their history and preferences.  My favorite has got to be:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;em&gt;How did you learn programming? Were any schools of any use? Or maybe you didn&amp;#8217;t even bother with ending any schools :) ?&lt;/em&gt;&lt;/p&gt;
@@ -603,9 +603,9 @@ I taught myself to program on an HP calculator using their &lt;span class=&quot;
  
  <entry>
    <title>Linking Outside of the Box: Optimizing Ruby with C/C++</title>
-   <link href="/2006/09/linking-outside-of-the-box-optimizing-ruby-with-c-c.html"/>
+   <link href="http://finagle.org/2006/09/linking-outside-of-the-box-optimizing-ruby-with-c-c.html"/>
    <updated>2006-09-28T00:00:00-07:00</updated>
-   <id>/2006/09/linking-outside-of-the-box-optimizing-ruby-with-c-c</id>
+   <id>http://finagle.org/2006/09/linking-outside-of-the-box-optimizing-ruby-with-c-c</id>
    <content type="html">&lt;h3&gt;Prototyping&lt;/h3&gt;
 &lt;p&gt;My first attempt at a routine to &lt;span class=&quot;caps&quot;&gt;XOR&lt;/span&gt; blocks (stored as Strings) looked something like this:&lt;/p&gt;
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt;
@@ -697,9 +697,9 @@ XOR (rb): 81.433333   0.683333  82.116667 ( 50.567826)
  
  <entry>
    <title>ODIN: Secure P2P on the Web</title>
-   <link href="/2006/09/odin.html"/>
+   <link href="http://finagle.org/2006/09/odin.html"/>
    <updated>2006-09-25T00:00:00-07:00</updated>
-   <id>/2006/09/odin</id>
+   <id>http://finagle.org/2006/09/odin</id>
    <content type="html">&lt;p&gt;The first thing you need to understand for this to make sense is that the magic of &lt;span class=&quot;caps&quot;&gt;OFF&lt;/span&gt; is all in the &lt;a href=&quot;http://wiki.offdev.org/Technical_Overview_of_OFF&quot;&gt;block encoding&lt;/a&gt; which turns meaningful bits into ownerless, quasi-random blocks identified by their SHA1 hashes.  Once this transformation is performed, there is no way for anyone to know the content of a block on the network, as it has no meaning until it&amp;#8217;s combined with other blocks (and, in that way, may actually &amp;#8220;belong&amp;#8221; to multiple files, simultaneously).&lt;/p&gt;
 &lt;p&gt;The thing that first screamed &amp;#8220;Rails app!&amp;#8221; to me is the fact that, once the content has been &lt;span class=&quot;caps&quot;&gt;OFF&lt;/span&gt;-encoded into blocks, any transport mechanism can be used to move these blocks around, allowing for a network-agnostic peer-to-peer system.  Using &lt;span class=&quot;caps&quot;&gt;HTTP&lt;/span&gt;, I could write my own smart, caching web peer (with combined web UI) in Rails, but since it&amp;#8217;s using &lt;span class=&quot;caps&quot;&gt;HTTP&lt;/span&gt;, I could also use dumb web server file servers as mass block stores (no &lt;span class=&quot;caps&quot;&gt;CGI&lt;/span&gt; required!).  Eventually, I could add (trivial) support to talk to the existing &lt;span class=&quot;caps&quot;&gt;OFF&lt;/span&gt; network (also &lt;span class=&quot;caps&quot;&gt;HTTP&lt;/span&gt;, &lt;span class=&quot;caps&quot;&gt;AFAIK&lt;/span&gt;). If I watned to get really crazy, I could make the app a 3-way network bridge with BitTorrent (which also uses SHA1-identified data blocks).&lt;/p&gt;
 &lt;p&gt;This is an extension of earlier musings about extending &lt;span class=&quot;caps&quot;&gt;HTTP&lt;/span&gt; (or coming up with some other standard) for enumerating mirrors of a particular web resource, something like a per-directory &lt;span class=&quot;caps&quot;&gt;MIRROR&lt;/span&gt; file (in &lt;span class=&quot;caps&quot;&gt;XML&lt;/span&gt;).  A local web-proxy/daemon would cache the status, speed, and locality of various mirrors, and attempt to provide the best location for a particular resource (Use Case #1: Linux &lt;span class=&quot;caps&quot;&gt;RPM&lt;/span&gt; repositories).  Throw in resource discovery, and you have a basic peer-to-peer network, all over &lt;span class=&quot;caps&quot;&gt;HTTP&lt;/span&gt;.  While this project assumes that each peer is serving &lt;span class=&quot;caps&quot;&gt;OFF&lt;/span&gt;-encoded blocks, there&amp;#8217;s no reason why this assumption couldn&amp;#8217;t be refactored-out, leaving a generic &lt;span class=&quot;caps&quot;&gt;HTTP&lt;/span&gt; P2P system.&lt;/p&gt;
@@ -708,9 +708,9 @@ XOR (rb): 81.433333   0.683333  82.116667 ( 50.567826)
  
  <entry>
    <title>Building Ruby Extensions with Rake</title>
-   <link href="/2006/09/building-ruby-extensions-with-rake.html"/>
+   <link href="http://finagle.org/2006/09/building-ruby-extensions-with-rake.html"/>
    <updated>2006-09-09T00:00:00-07:00</updated>
-   <id>/2006/09/building-ruby-extensions-with-rake</id>
+   <id>http://finagle.org/2006/09/building-ruby-extensions-with-rake</id>
    <content type="html">&lt;p&gt;At the moment, the tasks are a part of the &lt;span class=&quot;caps&quot;&gt;RDBXML&lt;/span&gt; project, hosted by &lt;a href=&quot;http://rubyforge.org&quot;&gt;RubyForge&lt;/a&gt; .  There is &lt;a href=&quot;http://rdbxml.rubyforge.org/classes/Rake.html&quot;&gt;documentation&lt;/a&gt;, and you can view the latest version in &lt;a href=&quot;http://rubyforge.org/plugins/scmsvn/viewcvs.php/trunk/rake/?root=rdbxml&quot;&gt;&lt;span class=&quot;caps&quot;&gt;SVN&lt;/span&gt; here&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Usage is simple enough:&lt;/p&gt;
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;&lt;span class=&quot;nb&quot;&gt;require&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;rake/swigextensiontask&amp;#39;&lt;/span&gt;
@@ -725,9 +725,9 @@ XOR (rb): 81.433333   0.683333  82.116667 ( 50.567826)
  
  <entry>
    <title>Typo w/ Rails Installer: The New Hotness</title>
-   <link href="/2006/07/typo-w-rails-installer-the-new-hotness.html"/>
+   <link href="http://finagle.org/2006/07/typo-w-rails-installer-the-new-hotness.html"/>
    <updated>2006-07-20T00:00:00-07:00</updated>
-   <id>/2006/07/typo-w-rails-installer-the-new-hotness</id>
+   <id>http://finagle.org/2006/07/typo-w-rails-installer-the-new-hotness</id>
    <content type="html">&lt;p&gt;So I had this very long and in-depth article almost-completely written article, detailing the nifty hacks I used to deploy &lt;a href=&quot;http://www.onebananaproblem.com&quot;&gt;this website&lt;/a&gt; on top of &lt;a href=&quot;http://typosphere.org&quot;&gt;Typo&lt;/a&gt;, using &lt;a href=&quot;http://manuals.rubyonrails.com/read/book/17&quot;&gt;Capistrano&lt;/a&gt; and a litle script to symlink them together.  It was beautiful and elegant &amp;#8230; and now completely useless thanks to &lt;a href=&quot;http://scottstuff.net/blog/articles/trackback/2646&quot;&gt;Typo 4&lt;/a&gt; .&lt;/p&gt;
 &lt;p&gt;The magic is in the &lt;a href=&quot;http://rubyforge.org/projects/rails-installer/&quot;&gt;Rails Installer&lt;/a&gt;, a handy little gem for doing end-user installs.  Makes my elegant little hacks a little silly.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;sigh&lt;/em&gt;&lt;/p&gt;</content>
@@ -735,9 +735,9 @@ XOR (rb): 81.433333   0.683333  82.116667 ( 50.567826)
  
  <entry>
    <title>I. HATE. PERL</title>
-   <link href="/2006/07/i-hate-perl.html"/>
+   <link href="http://finagle.org/2006/07/i-hate-perl.html"/>
    <updated>2006-07-20T00:00:00-07:00</updated>
-   <id>/2006/07/i-hate-perl</id>
+   <id>http://finagle.org/2006/07/i-hate-perl</id>
    <content type="html">&lt;p&gt;&lt;code&gt;man&lt;/code&gt; &lt;code&gt;perlop&lt;/code&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;Equality Operators&lt;/strong&gt;&lt;/p&gt;
@@ -749,9 +749,9 @@ XOR (rb): 81.433333   0.683333  82.116667 ( 50.567826)
  
  <entry>
    <title>A Few of My Favorite Things</title>
-   <link href="/2006/07/a-few-of-my-favorite-things.html"/>
+   <link href="http://finagle.org/2006/07/a-few-of-my-favorite-things.html"/>
    <updated>2006-07-02T00:00:00-07:00</updated>
-   <id>/2006/07/a-few-of-my-favorite-things</id>
+   <id>http://finagle.org/2006/07/a-few-of-my-favorite-things</id>
    <content type="html">&lt;h3&gt;Ruby Development&lt;/h3&gt;
 &lt;ul&gt;
 	&lt;li&gt;&lt;a href=&quot;http://ruby-lag.org&quot;&gt;Ruby&lt;/a&gt; (1.8.4)&lt;/li&gt;
@@ -803,9 +803,9 @@ without it.&lt;/p&gt;
  
  <entry>
    <title>Grooming My Inner CodeMonkey</title>
-   <link href="/2006/06/grooming-my-inner-codemonkey.html"/>
+   <link href="http://finagle.org/2006/06/grooming-my-inner-codemonkey.html"/>
    <updated>2006-06-10T00:00:00-07:00</updated>
-   <id>/2006/06/grooming-my-inner-codemonkey</id>
+   <id>http://finagle.org/2006/06/grooming-my-inner-codemonkey</id>
    <content type="html">&lt;p&gt;Gooday, eh? This is my coding blog, and welcome to it.&lt;/p&gt;
 &lt;p&gt;First, I should probably give credit for the inspiration for this blog to the &lt;a href=&quot;podcast.rubyonrails.com&quot;&gt;Ruby on Rails Podcast&lt;/a&gt;. It introduced me to the Ruby  and Rails community, and some of the cool stuff people are doing with it (&lt;a href=&quot;rspec.rubyforge.org&quot;&gt;&lt;span class=&quot;caps&quot;&gt;BDD&lt;/span&gt;&lt;/a&gt; especially caught my ear).  I decided that I had enough thoughts rolling around in my head that might be of use or interest to others, that I should hop on the blog-wagon.&lt;/p&gt;
 &lt;p&gt;I&amp;#8217;m also using this site as a test-bed for some Rails experimentation, starting with using &lt;a href=&quot;typosphere.org&quot;&gt;Typo&lt;/a&gt; as a base, to which I can add some of my own Rails goodness.&lt;/p&gt;
