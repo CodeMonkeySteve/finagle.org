@@ -31,14 +31,13 @@
         <div id="content">
   <div id="maincol">
     <div id="mc2">
-    
-  
-      <div class="post first">
-  <div class="post-title"><h1><a href="/2011/04/toward-a-more-perfect-mongo-odm.html">Toward a More Perfect Mongo ODM</a></h1></div>
-  <p class="auth">Posted by code_monkey_steve,
-    <span class="typo_date" title="2011/04/24">2011-04-24 00:00:00 -0700</span></p>
-  <div class="post-body">
-  <h2>MongoDB, MongoMapper, and Mongoid</h2>
+
+      <div class="post">
+        <div class="post-title"><h1>Toward a More Perfect Mongo ODM</h1></div>
+        <p class="auth">Posted by code_monkey_steve,
+          <span class="typo_date" title="2011/04/24">2011-04-24 00:00:00 -0700</span></p>
+        <div class="post-body">
+        <h2>MongoDB, MongoMapper, and Mongoid</h2>
 <p>I&#8217;m now well into my third Rails project using the <a href="http://mongodb.org">MongoDB</a> document database, and while I&#8217;m still a big fan of<br />
 Mongo, I&#8217;ve been underwhelmed by the <acronym title="Object-Document Mapper"><span class="caps">ODM</span></acronym>s I&#8217;ve used.  On the first project, I started with <a href="http://mongomapper.com">MongoMapper</a>, which is very mature and well-supported, but was a little klunky and tried a little too hard to be like <a href="http://ar.rubyonrails.org">ActiveRecord</a>.</p>
 <p>For the second project, I switched to <a href="http://mongoid.org">Mongoid</a>, which was a huge improvement.  It played nicely with ActiveSupport and ActiveModel, and had better support for doing things the Mongo way.  But in the end, it had several nasty bugs related to associations and embedded documents, and the better I understood what I wanted from an <span class="caps">ODM</span>, the more I realized that Mongoid wasn&#8217;t it.</p>
@@ -94,213 +93,85 @@ Mongo, I&#8217;ve been underwhelmed by the <acronym title="Object-Document Mappe
 <p>MongoDB actually comes pretty close with their support for <a href="http://www.mongodb.org/display/DOCS/Database+References">Database References</a>.  These allow you to assign to a document field a reference to any document in any collection.  I&#8217;ve expanded MongoODM with a transparent Reference proxy, and assigning a reference to a field is as simple as appending <code>.reference</code> to a document.  I&#8217;ve been looking at adding something similar for <a href="http://www.mongodb.org/display/DOCS/GridFS+Specification">GridFS attachments</a>, but with a reference count to allow easy sharing of large binary objects between documents.</p>
 <h2>The Future &#8212; No <span class="caps">ODM</span>?</h2>
 <p>This post is mostly just a dump of ideas I&#8217;ve had while working to expand MongoODM.  But I find myself working more and more in Javascript, these days, and taking advantage of things like <a href="http://jquery.com">jQuery</a> and <a href="http://documentcloud.github.com/backbone">Backbone</a> to build rich client applications in the browser.  In this situation, which I think will become more common, I don&#8217;t need so much <span class="caps">ODM</span> support in Ruby/Rails, and more-so in Javascript.  So now I&#8217;m contemplating a MongoDB interface in JavaScript, passing through some sort of <a href="http://rack.rubyforge.org">Rack</a> proxy to perform access control.  I&#8217;ll let you know how it turns out &#8230;</p>
-  </div>
-  <p class="meta">
-    <a href="/2011/04/toward-a-more-perfect-mongo-odm.html#disqus_thread" data-disqus-identifier="/2011/04/toward-a-more-perfect-mongo-odm">comments</a>
-    
-      | Tags: mongodb
-    
-  </p>
-</div>
-
-    
-
-  
-      <h2>Previous post: <a href="/2011/03/back-from-the-dead.html">"Back from the Dead"</a> ...</h2>
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-<div class="clear"></div>
+        </div>
+        
+          <p class="meta">
+            Tags: mongodb
+          </p>
+        
+        <div id="disqus_thread"></div>
+      </div>
 
     </div>
   </div>
-
   <div id="subcol">
     <div class="bt"><div></div></div>
     <div id="sc2">
-      <div id="about" class="sidebar-node">
-  <h3>About Me</h3>
-  <ul class="dates">
-    <li><a href="http://github.com/CodeMonkeySteve/">CodeMonkeySteve</a> on <a href="http://github.com">GitHub</a></li>
-    <li><a href="http://www.linkedin.com/in/codemonkeysteve">Steve Sloan</a> in Real Life</li>
-    <li><a href="http://www.google.com/search?q=finagle">What's a Finagle?</a></li>
-  </ul>
-</div>
-
-
       <div class="sidebar-node">
-  <h3>Recently</h3>
-  <ul class="dates">
-    
+  <h3>Related</h3>
+    <ul class="counts">
       
-        <li><a href="/2011/04/toward-a-more-perfect-mongo-odm.html"><span class="date">04.11</span> Toward a More Perfect Mongo ODM</a></li>
+        
       
-    
+        
+          <li><a href="/2009/07/i-hate-shoulda-but-i-blame-test-unit.html">I Hate Shoulda (But I Blame Test::Unit)</a></li>
+        
       
-        <li><a href="/2011/03/back-from-the-dead.html"><span class="date">03.11</span> Back from the Dead</a></li>
+        
+          <li><a href="/2011/03/back-from-the-dead.html">Back from the Dead</a></li>
+        
       
-    
+        
+          <li><a href="/2006/07/a-few-of-my-favorite-things.html">A Few of My Favorite Things</a></li>
+        
       
-        <li><a href="/2010/10/take-my-money-please.html"><span class="date">10.10</span> Take my money, please!</a></li>
+        
+          <li><a href="/2006/09/linking-outside-of-the-box-optimizing-ruby-with-c-c.html">Linking Outside of the Box: Optimizing Ruby with C/C++</a></li>
+        
       
-    
+        
+          <li><a href="/2010/10/take-my-money-please.html">Take my money, please!</a></li>
+        
       
-        <li><a href="/2010/09/autotest-and-ruby-1-9-2.html"><span class="date">09.10</span> Autotest and Ruby 1.9.2</a></li>
+        
+          <li><a href="/2006/09/odin.html">ODIN: Secure P2P on the Web</a></li>
+        
       
-    
+        
+          <li><a href="/2010/01/json-and-the-args-or-not.html">JSON and the Args (or Not)</a></li>
+        
       
-        <li><a href="/2010/05/ruby-gets-possessive.html"><span class="date">05.10</span> Ruby Gets Possessive</a></li>
+        
+          <li><a href="/2007/03/back-on-rails.html">Back on Rails</a></li>
+        
       
-    
+        
+          <li><a href="/2009/05/couch-trouble.html">Couch Trouble</a></li>
+        
       
-    
+        
+          <li><a href="/2010/02/swing-from-tree-to-tree.html">Swinging from Tree to Tree</a></li>
+        
       
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-    <li><a href="/archive.html" class="archives">More ...</a></li>
-  </ul>
+    </ul>
 </div>
-
 
     </div>
-  </div>
-</div>
-<div id="subfoot">
-  <div class="bb">
-    <div></div>
   </div>
 </div>
 
 <script type="text/javascript">
   var disqus_shortname = 'finagle';
-  (function () {
-      var s = document.createElement('script'); s.async = true;
-      s.type = 'text/javascript';
-      s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
-      (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-  }());
+  var disqus_identifier = '';
+  var disqus_url = 'http://finagle.org/2011/04/toward-a-more-perfect-mongo-odm.html';
+
+  (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
 </script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
         <div id="footer">
           <p>
