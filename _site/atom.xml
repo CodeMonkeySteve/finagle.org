@@ -4,7 +4,7 @@
  <title>Finagle</title>
  <link href="http://finagle.org/atom.xml" rel="self"/>
  <link href="http://finagle.org/"/>
- <updated>2011-04-24T22:36:53-07:00</updated>
+ <updated>2011-04-25T10:15:27-07:00</updated>
  <id>http://finagle.org/</id>
  <author>
    <name>Steve Sloan</name>
@@ -70,7 +70,7 @@ Mongo, I&amp;#8217;ve been underwhelmed by the &lt;acronym title=&quot;Object-Do
 &lt;/ul&gt;
 &lt;h5&gt;References and Associations&lt;/h5&gt;
 &lt;p&gt;This area gets a bit tricky, partially because of SQL&amp;#8217;s wretched legacy of foriegn keys and join tables, but also because the problem is just inherently difficult. Ideally, the database or &lt;span class=&quot;caps&quot;&gt;ODM&lt;/span&gt; would provide an equivalent to Ruby&amp;#8217;s garbage-collected memory management system, where any document field could be a reference to any other object of any type, and all objects would be automatically destroyed when no longer used.&lt;/p&gt;
-&lt;p&gt;MongoDB actually comes pretty close with their support for &lt;a href=&quot;http://www.mongodb.org/display/DOCS/Database+References&quot;&gt;Database References&lt;/a&gt;.  These allow you to assign to a document field a reference to any document in any collection.  I&amp;#8217;ve expanded MongoODM with a transparent Reference proxy, and assigning a reference to a field is as simple as appending &lt;code&gt;.reference&lt;/code&gt; to a document.  I&amp;#8217;ve been looking at adding something similar for &lt;a href=&quot;http://www.mongodb.org/display/DOCS/GridFS+Specification&quot;&gt;GridFS attachments&lt;/a&gt;, but with a reference count to allow easy sharing of large binary objects between documents.&lt;/p&gt;
+&lt;p&gt;MongoDB actually comes pretty close with their support for &lt;a href=&quot;http://www.mongodb.org/display/DOCS/Database+References&quot;&gt;Database References&lt;/a&gt;.  These allow you to assign to a document field a reference to any document in any collection.  I&amp;#8217;ve expanded MongoODM with a transparent Reference proxy, and assigning a reference to a field is as simple as calling &lt;code&gt;.reference&lt;/code&gt; (or &lt;code&gt;.ref&lt;/code&gt;) on a document.  I&amp;#8217;ve been looking at adding something similar for &lt;a href=&quot;http://www.mongodb.org/display/DOCS/GridFS+Specification&quot;&gt;GridFS attachments&lt;/a&gt;, but with a reference count to allow easy sharing of large binary objects between documents.&lt;/p&gt;
 &lt;h2&gt;The Future &amp;#8212; No &lt;span class=&quot;caps&quot;&gt;ODM&lt;/span&gt;?&lt;/h2&gt;
 &lt;p&gt;This post is mostly just a dump of ideas I&amp;#8217;ve had while working to expand MongoODM.  But I find myself working more and more in Javascript, these days, and taking advantage of things like &lt;a href=&quot;http://jquery.com&quot;&gt;jQuery&lt;/a&gt; and &lt;a href=&quot;http://documentcloud.github.com/backbone&quot;&gt;Backbone&lt;/a&gt; to build rich client applications in the browser.  In this situation, which I think will become more common, I don&amp;#8217;t need so much &lt;span class=&quot;caps&quot;&gt;ODM&lt;/span&gt; support in Ruby/Rails, and more-so in Javascript.  So now I&amp;#8217;m contemplating a MongoDB interface in JavaScript, passing through some sort of &lt;a href=&quot;http://rack.rubyforge.org&quot;&gt;Rack&lt;/a&gt; proxy to perform access control.  I&amp;#8217;ll let you know how it turns out &amp;#8230;&lt;/p&gt;</content>
  </entry>

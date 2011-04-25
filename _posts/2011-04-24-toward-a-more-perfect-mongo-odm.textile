@@ -83,7 +83,7 @@ h5. References and Associations
 
 This area gets a bit tricky, partially because of SQL's wretched legacy of foriegn keys and join tables, but also because the problem is just inherently difficult. Ideally, the database or ODM would provide an equivalent to Ruby's garbage-collected memory management system, where any document field could be a reference to any other object of any type, and all objects would be automatically destroyed when no longer used.
 
-MongoDB actually comes pretty close with their support for "Database References":http://www.mongodb.org/display/DOCS/Database+References.  These allow you to assign to a document field a reference to any document in any collection.  I've expanded MongoODM with a transparent Reference proxy, and assigning a reference to a field is as simple as appending @.reference@ to a document.  I've been looking at adding something similar for "GridFS attachments":http://www.mongodb.org/display/DOCS/GridFS+Specification, but with a reference count to allow easy sharing of large binary objects between documents.
+MongoDB actually comes pretty close with their support for "Database References":http://www.mongodb.org/display/DOCS/Database+References.  These allow you to assign to a document field a reference to any document in any collection.  I've expanded MongoODM with a transparent Reference proxy, and assigning a reference to a field is as simple as calling @.reference@ (or @.ref@) on a document.  I've been looking at adding something similar for "GridFS attachments":http://www.mongodb.org/display/DOCS/GridFS+Specification, but with a reference count to allow easy sharing of large binary objects between documents.
 
 
 h2. The Future -- No ODM?

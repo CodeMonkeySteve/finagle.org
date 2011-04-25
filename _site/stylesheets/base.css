@@ -171,9 +171,7 @@ blockquote cite { font-style: normal; }
 
 code {
   color: #8ac;
-  font-size: 130%;
   font-family: monospace;
-  line-height: 1.2em;
   text-align: left;
 }
 code strong {
