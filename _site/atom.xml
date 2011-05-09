@@ -4,13 +4,53 @@
  <title>Finagle</title>
  <link href="http://finagle.org/atom.xml" rel="self"/>
  <link href="http://finagle.org/"/>
- <updated>2011-04-25T10:15:27-07:00</updated>
+ <updated>2011-05-10T22:30:49-07:00</updated>
  <id>http://finagle.org/</id>
  <author>
    <name>Steve Sloan</name>
    <email>steve@finagle.org</email>
  </author>
 
+ 
+ <entry>
+   <title>AudioBook Log</title>
+   <link href="http://finagle.org/2011/05/audiobook-log.html"/>
+   <updated>2011-05-09T00:00:00-07:00</updated>
+   <id>http://finagle.org/2011/05/audiobook-log</id>
+   <content type="html">&lt;p&gt;For over a year I&amp;#8217;ve been commuting for almost 2 hours a day, and in an attempt to stave-off potentially lethal boredom, I&amp;#8217;ve been passing the time listening to audiobooks.  Here&amp;#8217;s what I&amp;#8217;ve been reading/listening to:&lt;/p&gt;
+&lt;p&gt;Note, format is: &lt;em&gt;title&lt;/em&gt; (&lt;em&gt;year&lt;/em&gt;), &lt;em&gt;authors&lt;/em&gt; (&lt;em&gt;readers&lt;/em&gt;)&lt;/p&gt;
+&lt;ul&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.amazon.com/Daily-Show-Stewart-Presents-Earth/dp/044657922X&quot;&gt;Earth: A Visitor&amp;#8217;s Guide to the Human Race&lt;/a&gt; (2010), Jon Stewart et al. (Jon Stewart)&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.amazon.com/Freakonomics-Economist-Explores-Hidden-Everything/dp/0060731338&quot;&gt;Freakonomics: A Rogue Economist Explores the Hidden Side of Everything&lt;/a&gt; (2005), Steven D. Levitt and Stephen J. Dubner (Stephen J. Dubner)&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.amazon.com/God-Not-Great-Religion-Everything/dp/0446697966&quot;&gt;God Is Not Great: How Religion Poisons Everything&lt;/a&gt; (2009), Christopher Hitchens (Christopher Hitchens)&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.amazon.com/Fleet-Worlds-Larry-Niven/dp/0765357836&quot;&gt;Fleet of Worlds&lt;/a&gt; (2007), Larry Niven and Edward M. Lerner (Tom Weiner)&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.amazon.com/Juggler-Worlds-Larry-Niven/dp/0765357844&quot;&gt;Juggler of Worlds&lt;/a&gt; (2008), Larry Niven and Edward M. Lerner (Tom Weiner)&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.amazon.com/Destroyer-Worlds-Larry-Niven/dp/B004A14W9U&quot;&gt;Destroyer of Worlds&lt;/a&gt; (2009), Larry Niven and Edward M. Lerner (Tom Weiner)&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.amazon.com/Betrayer-Worlds-Larry-Niven/dp/0765326086&quot;&gt;Betrayer of Worlds&lt;/a&gt; (2010), Larry Niven and Edward M. Lerner (Tom Weiner)&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.amazon.com/God-Delusion-Richard-Dawkins/dp/0618918248&quot;&gt;The God Delusion&lt;/a&gt; (2008), Richard Dawkins (Richard Dawkins)&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.amazon.com/Greatest-Show-Earth-Evidence-Evolution/dp/1416594795&quot;&gt;The Greatest Show on Earth: The Evidence for Evolution&lt;/a&gt; (2010), Richard Dawkins (Richard Dawkins)&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.amazon.com/Ancestors-Tale-Pilgrimage-Dawn-Evolution/dp/061861916X&quot;&gt;The Ancestor&amp;#8217;s Tale: A Pilgrimage to the Dawn of Evolution&lt;/a&gt; (2005), Richard Dawkins (Richard Dawkins)&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.amazon.com/End-Faith-Religion-Terror-Future/dp/0393035158&quot;&gt;The End of Faith: Religion, Terror, and the Future of Reason&lt;/a&gt; (2005), Sam Harris (Brian Emerson)&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.amazon.com/Letter-Christian-Nation-Vintage-Harris/dp/0307278778&quot;&gt;Letter to a Christian Nation&lt;/a&gt; (2008), Sam Harris (Jordan Bridges)&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.amazon.com/Moral-Landscape-Science-Determine-Values/dp/1439171211&quot;&gt;The Moral Landscape: How Science Can Determine Human Values&lt;/a&gt; (2010), Sam Harris (Sam Harris)&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.amazon.com/Unpleasant-Profession-Jonathan-Hoag/dp/0441854575&quot;&gt;The Unpleasant Profession of Jonathan Hoag&lt;/a&gt; (1942), Robert Heinlein (Tom Weiner)&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.amazon.com/Cat-Who-Walks-through-Walls/dp/0441094996&quot;&gt;The Cat Who Walks Through Walls&lt;/a&gt; (1985), Robert Heinlein (Tom Weiner)&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.amazon.com/Integral-Trees-Larry-Niven/dp/B00266CDOC&quot;&gt;The Integral Trees&lt;/a&gt; (1984), Larry Niven (Pat Bottino)&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.amazon.com/Smoke-Ring-Larry-Niven/dp/B001NDROG6&quot;&gt;The Smoke Ring&lt;/a&gt; (1987), Larry Niven (Pat Bottino)&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.amazon.com/Inferno-Henri-Barbusse/dp/1617200875&quot;&gt;Inferno&lt;/a&gt; (1976), Larry Niven and Jerry Pournelle (Tom Weiner)&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.amazon.com/Escape-Hell-Larry-Niven/dp/B0030EG174&quot;&gt;Escape from Hell&lt;/a&gt; (2009), Larry Niven and Jerry Pournelle (Tom Weiner)&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.amazon.com/Ringworlds-Children-Larry-Niven/dp/0765341026&quot;&gt;Ringworld&amp;#8217;s Children&lt;/a&gt; (2004), Larry Niven (?)&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.amazon.com/Draco-Tavern-Larry-Niven/dp/0765347717&quot;&gt;The Draco Tavern&lt;/a&gt; (2006), Larry Niven (Tom Weiner)&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.amazon.com/Radio-Free-Albemuth-Philip-Dick/dp/0679781374&quot;&gt;Radio Free Albemuth&lt;/a&gt; (1976), Philip K. Dick (Tom Weiner)&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.amazon.com/Borderlands-Science-Where-Sense-Nonsense/dp/0195157982&quot;&gt;The Borderlands of Science: Where Sense Meets Nonsense&lt;/a&gt; (2001), Michael Shermer (Grover Gardener)&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.amazon.com/People-Believe-Weird-Things-Pseudoscience/dp/0805070893&quot;&gt;Why People Believe Weird Things: Pseudoscience, Superstition, and Other Confusions of Our Time&lt;/a&gt; (2002), Michael Shermer (Michael Shermer)&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.amazon.com/Science-Good-Evil-People-Gossip/dp/0805077693&quot;&gt;The Science of Good and Evil: Why People Cheat, Gossip, Care, Share, and Follow the Golden Rule&lt;/a&gt; (2004), Michael Shermer (Michael Shermer)&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.amazon.com/Pale-Blue-Dot-Vision-Future/dp/0345376595&quot;&gt;Pale Blue Dot: A Vision of the Human Future in Space&lt;/a&gt; (1994), Carl Sagan (Carl Sagan)&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.amazon.com/Demon-Haunted-World-Science-Candle-Dark/dp/0345409469&quot;&gt;The Demon-Haunted World: Science as a Candle in the Dark&lt;/a&gt; (1995), Carl Sagan (Michael Page)&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.amazon.com/JPod-Novel-Douglas-Coupland/dp/1596911050&quot;&gt;JPod&lt;/a&gt; (2006), Douglas Coupland (Marc Cashman)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;While all of the books were good, the quality of the audiobook depends almost entirely on the voice of the person reading it.  So far my favorites are &lt;a href=&quot;http://www.audiofilemagazine.com/gvpages/A2427.shtml&quot;&gt;Tom Weiner&amp;#8217;s&lt;/a&gt; rich baritone and &lt;a href=&quot;http://en.wikipedia.org/wiki/Richard_Dawkins&quot;&gt;Richard Dawkins&amp;#8217;&lt;/a&gt; pleasant english accent.  By far the worst, though, is anything read by Carl Sagan: I can highly recommend Carl&amp;#8217;s plodding pace and odd word emphasis to insomniacs who don&amp;#8217;t respond to strong drugs.&lt;/p&gt;</content>
+ </entry>
  
  <entry>
    <title>Toward a More Perfect Mongo ODM</title>
