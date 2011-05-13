@@ -4,13 +4,61 @@
  <title>Finagle</title>
  <link href="http://finagle.org/atom.xml" rel="self"/>
  <link href="http://finagle.org/"/>
- <updated>2011-05-10T22:30:49-07:00</updated>
+ <updated>2011-05-12T23:58:38-07:00</updated>
  <id>http://finagle.org/</id>
  <author>
    <name>Steve Sloan</name>
    <email>steve@finagle.org</email>
  </author>
 
+ 
+ <entry>
+   <title>Excluding a bad RPM package</title>
+   <link href="http://finagle.org/2011/05/excluding-a-bad-rpm-package.html"/>
+   <updated>2011-05-13T00:00:00-07:00</updated>
+   <id>http://finagle.org/2011/05/excluding-a-bad-rpm-package</id>
+   <content type="html">&lt;p&gt;I&amp;#8217;m a big fan of &lt;a href=&quot;http://kde.org&quot;&gt;&lt;span class=&quot;caps&quot;&gt;KDE&lt;/span&gt;&lt;/a&gt;, as both a user and a developer, and &lt;a href=&quot;http://akregator.kde.org&quot;&gt;Akregator&lt;/a&gt; is my &lt;span class=&quot;caps&quot;&gt;RSS&lt;/span&gt; feed reader of choice.  I&amp;#8217;m also a big fan of &lt;span class=&quot;caps&quot;&gt;RSS&lt;/span&gt; feeds, using them for almost all my regular daily information consumption.&lt;/p&gt;
+&lt;p&gt;So imagine my notable lack of delight when, after doing a regular &lt;span class=&quot;caps&quot;&gt;YUM&lt;/span&gt; update, I discovered that the latest version of Akregator has &lt;a href=&quot;https://bugs.kde.org/show_bug.cgi?id=271149&quot;&gt;a serious bug that makes it almost unusable&lt;/a&gt;.  And I didn&amp;#8217;t even want the new version anyway.&lt;/p&gt;
+&lt;p&gt;Ah, but since I&amp;#8217;m using &lt;span class=&quot;caps&quot;&gt;RPM&lt;/span&gt; and &lt;span class=&quot;caps&quot;&gt;YUM&lt;/span&gt;, the fix for this sort of thing is actually pretty simple, although it took me a few minutes of reading man pages to work it out, so I thought I should share the fruits of my labor.  Here&amp;#8217;s how you exclude a bad &lt;span class=&quot;caps&quot;&gt;RPM&lt;/span&gt; package:&lt;/p&gt;
+&lt;p&gt;First, find the last good version of the appropriate package:&lt;/p&gt;
+&lt;blockquote&gt;&lt;pre&gt;&lt;code&gt;
+$ rpm -qf `which akregator`
+kdepim-4.4.11.1-2.fc14.x86_64
+
+$ sudo yum list kdepim --showduplicates
+...
+Installed Packages
+kdepim.x86_64        7:4.4.11.1-2.fc14
+Available Packages
+kdepim.x86_64        6:4.4.6-2.fc14
+kdepim.x86_64        7:4.4.11.1-2.fc14
+&lt;/code&gt;&lt;/pre&gt;&lt;/blockquote&gt;
+&lt;p&gt;In this case, the desired version is 4.4.6 (the &amp;#8220;6:&amp;#8221; is the epoch, the &amp;#8220;-2&amp;#8221; is the release, and the &amp;#8220;fc14&amp;#8221; is the architecture).&lt;/p&gt;
+&lt;p&gt;Next, downgrade the package.  If there are any dependency errors, you&amp;#8217;ll also need to downgrade those packages too.&lt;/p&gt;
+&lt;blockquote&gt;&lt;pre&gt;&lt;code&gt;
+$ sudo yum downgrade kdepim-4.4.6
+...
+Error: Package: 7:kdepim-libs-4.4.11.1-2.fc14.x86_64
+...
+
+$ sudo yum downgrade kdepim-4.4.6 kdepim-libs
+...
+Removed:
+  kdepim.x86_64 7:4.4.11.1-2.fc14                                                   kdepim-libs.x86_64 7:4.4.11.1-2.fc14
+
+Installed:
+  kdepim.x86_64 6:4.4.6-2.fc14                                                      kdepim-libs.x86_64 6:4.4.6-2.fc14
+
+Complete!
+&lt;/code&gt;&lt;/pre&gt;&lt;/blockquote&gt;
+&lt;p&gt;And finally, edit &lt;code&gt;/etc/yum.conf&lt;/code&gt; and add the offending package version to an &lt;code&gt;exclude&lt;/code&gt; line:&lt;/p&gt;
+&lt;blockquote&gt;&lt;pre&gt;&lt;code&gt;
+[main]
+...
+exclude=kdepim-4.4.11.1 kdepim-libs-4.4.11.1
+&lt;/code&gt;&lt;/pre&gt;&lt;/blockquote&gt;
+&lt;p&gt;Take that, &lt;code&gt;kdepims-4.4.11&lt;/code&gt;. &lt;em&gt;&lt;strong&gt;plonk&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;</content>
+ </entry>
  
  <entry>
    <title>AudioBook Log</title>
