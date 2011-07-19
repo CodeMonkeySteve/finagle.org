@@ -7,8 +7,7 @@ tags: [mongodb]
 
 h2. MongoDB, MongoMapper, and Mongoid
 
-I'm now well into my third Rails project using the "MongoDB":http://mongodb.org document database, and while I'm still a big fan of
-Mongo, I've been underwhelmed by the ODM(Object-Document Mapper)s I've used.  On the first project, I started with "MongoMapper":http://mongomapper.com, which is very mature and well-supported, but was a little klunky and tried a little too hard to be like "ActiveRecord":http://ar.rubyonrails.org.
+I'm now well into my third Rails project using the "MongoDB":http://mongodb.org document database, and while I'm still a big fan of Mongo, I've been underwhelmed by the ODM(Object-Document Mapper)s I've used.  On the first project, I started with "MongoMapper":http://mongomapper.com, which is very mature and well-supported, but was a little klunky and tried a little too hard to be like "ActiveRecord":http://ar.rubyonrails.org.
 
 For the second project, I switched to "Mongoid":http://mongoid.org, which was a huge improvement.  It played nicely with ActiveSupport and ActiveModel, and had better support for doing things the Mongo way.  But in the end, it had several nasty bugs related to associations and embedded documents, and the better I understood what I wanted from an ODM, the more I realized that Mongoid wasn't it.
 
@@ -27,7 +26,7 @@ h5. "MongoODM":https://github.com/carlosparamio/mongo_odm ("my fork":https://git
 
 It could use a better name, but it's a nice ODM, if a bit immature.  I especially like its support for embedded documents, i.e. you don't have to do anything special, just assign a variable of the specified Mongo-serializeable type (Document or otherwise) to a field, and it Just Works.  It also supports Arrays and Hashes that can take any heterogeneous collection of types.
 
-It's also better designed under the hood than Mongoid or MongoMapper, taking full advantage of Ruby conventions to be easily hackable.  Definitely the best closest candidate to my Perfect ODM.  MongoODM is definitely the best candidate for Perfect ODM I've yet seen.
+It's also better designed under the hood than Mongoid or MongoMapper, taking full advantage of Ruby conventions to be easily hackable.  MongoODM is definitely the best candidate for Perfect ODM I've yet seen.
 
 
 h2. The Perfect ODM
@@ -40,11 +39,11 @@ Like it or not, the ActiveRecord API is the standard convention for performing D
 
 h5. "Duck typing":http://en.wikipedia.org/wiki/Duck_typing and Other Ruby-isms
 
-This is one big feature that ActiveRecord does not (and cannot) have, but which Mongo gives us almost for free -- dynamic typing, just like native Ruby.  Mongoid supports this for polymorphism, and MongoODM also supports dynamic types in Hashes and Arrays, and it was this fact that original attracted me to it.  I have no problem with declaring document fields, but why should I have to specify the type?  For that matter, why should I be constrained to a static type?
+This is one big feature that ActiveRecord does not (and cannot) have, but which Mongo gives us almost for free -- dynamic typing, just like native Ruby.  Mongoid supports this for polymorphism, but MongoODM also supports dynamic types in Hashes and Arrays, and it was this fact that original attracted me to it.  I have no problem with declaring document fields, but why should I have to specify the type?  For that matter, why should I be constrained to a static type?
 
 h5. Schema DSL
 
-Even though I want the freedom to store any value of any type in any field, I know that schemas are still important, both for validation and configuration management.  All ODMs provide ActiveRecord-style type-specifiers and validations (Mongoid and MongoODM also use ActiveModel), but I'd like to see document schemata become a top-level object, some superset of "JSON Schema":http://json-schema.org, with an friendly and extensible DSL.  Something like this:
+Even though I want the freedom to store any value of any type in any field, I know that schemas are still important, both for validation and configuration management.  All ODMs provide ActiveRecord-style type-specifiers and validations (Mongoid and MongoODM also use ActiveModel), but I'd like to see document schemata become a top-level object, some superset of "JSON Schema":http://json-schema.org, with a friendly and extensible DSL.  Something like this:
 
 <blockquote><pre><code>class Person
     schema do
