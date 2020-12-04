@@ -1,324 +1,556 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-  <title>Finagle</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <link href="/stylesheets/master.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="/stylesheets/color.css" media="screen" rel="stylesheet" type="text/css" />
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.21.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
 
-  <script src="/javascripts/prototype.js" type="text/javascript"></script>
-  <script src="/javascripts/effects.js" type="text/javascript"></script>
-  <script src="/javascripts/typo.js" type="text/javascript"></script>
-  <script src="/javascripts/lucid.js" type="text/javascript"></script>
+<!-- begin _includes/seo.html --><title>finagle</title>
+<meta name="description" content="">
 
-  <link href="/feed/atom.xml" rel="alternate" type="application/atom+xml" />
-</head>
-<body class="c-ms cs0 fixed">
-  <div id="wrapper">
-    <div id="w2">
-      <div class="clearfix" id="w3">
-        <div class="clearfix" id="header">
-          <div id="logo">
-            <!-- <a href="/"><img src="/images/logo.png" alt="" /></a> -->
-            <h1 class="pageTitle">
-              <a href="/">Finagle</a>
-              <!-- <span class='subtitle'>&mdash; a weblog</span> -->
-            </h1>
-            <h2>Changing the world would be easier if I had the source code.</h2>
-          </div>
-          <div id="search"></div>
-        </div>
-        <div id="content">
-  <div id="maincol">
-    <div id="mc2">
-    
+
+  <meta name="author" content="Steve Sloan">
   
-      <div class="post first">
-  <div class="post-title"><h1><a href="/2011/05/excluding-a-bad-rpm-package.html">Excluding a bad RPM package</a></h1></div>
-  <p class="auth">Posted by code_monkey_steve,
-    <span class="typo_date" title="2011/05/13">2011-05-13 00:00:00 -0700</span></p>
-  <div class="post-body">
-  <p>I&#8217;m a big fan of <a href="http://kde.org"><span class="caps">KDE</span></a>, as both a user and a developer, and <a href="http://akregator.kde.org">Akregator</a> is my <span class="caps">RSS</span> feed reader of choice.  I&#8217;m also a big fan of <span class="caps">RSS</span> feeds, using them for almost all my regular daily information consumption.</p>
-<p>So imagine my notable lack of delight when, after doing a regular <span class="caps">YUM</span> update, I discovered that the latest version of Akregator has <a href="https://bugs.kde.org/show_bug.cgi?id=271149">a serious bug that makes it almost unusable</a>.  And I didn&#8217;t even want the new version anyway.</p>
-<p>Ah, but since I&#8217;m using <span class="caps">RPM</span> and <span class="caps">YUM</span>, the fix for this sort of thing is actually pretty simple, although it took me a few minutes of reading man pages to work it out, so I thought I should share the fruits of my labor.  Here&#8217;s how you exclude a bad <span class="caps">RPM</span> package:</p>
-<p>First, find the last good version of the appropriate package:</p>
-<blockquote><pre><code>
-$ rpm -qf `which akregator`
-kdepim-4.4.11.1-2.fc14.x86_64
 
-$ sudo yum list kdepim --showduplicates
-...
-Installed Packages
-kdepim.x86_64        7:4.4.11.1-2.fc14
-Available Packages
-kdepim.x86_64        6:4.4.6-2.fc14
-kdepim.x86_64        7:4.4.11.1-2.fc14
-</code></pre></blockquote>
-<p>In this case, the desired version is 4.4.6 (the &#8220;6:&#8221; is the epoch, the &#8220;-2&#8221; is the release, and the &#8220;fc14&#8221; is the architecture).</p>
-<p>Next, downgrade the package.  If there are any dependency errors, you&#8217;ll also need to downgrade those packages too.</p>
-<blockquote><pre><code>
-$ sudo yum downgrade kdepim-4.4.6
-...
-Error: Package: 7:kdepim-libs-4.4.11.1-2.fc14.x86_64
-...
 
-$ sudo yum downgrade kdepim-4.4.6 kdepim-libs
-...
-Removed:
-  kdepim.x86_64 7:4.4.11.1-2.fc14                                                   kdepim-libs.x86_64 7:4.4.11.1-2.fc14
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="finagle">
+<meta property="og:title" content="finagle">
+<meta property="og:url" content="http://localhost:4000/">
 
-Installed:
-  kdepim.x86_64 6:4.4.6-2.fc14                                                      kdepim-libs.x86_64 6:4.4.6-2.fc14
 
-Complete!
-</code></pre></blockquote>
-<p>And finally, edit <code>/etc/yum.conf</code> and add the offending package version to an <code>exclude</code> line:</p>
-<blockquote><pre><code>
-[main]
-...
-exclude=kdepim-4.4.11.1 kdepim-libs-4.4.11.1
-</code></pre></blockquote>
-<p>Take that, <code>kdepims-4.4.11</code>. <em><strong>plonk</strong></em></p>
-  </div>
-  <p class="meta">
-    <a href="/2011/05/excluding-a-bad-rpm-package.html#disqus_thread" data-disqus-identifier="/2011/05/excluding-a-bad-rpm-package">comments</a>
+  <meta property="og:description" content="">
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/">
+
+
+
+  <link rel="next" href="http://localhost:4000/page2/">
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
     
-      | Tags: rpm and tips
+      "@type": "Person",
+      "name": "Steve Sloan",
+      "url": "http://localhost:4000/"
+    
+  }
+</script>
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="finagle Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+
+<!--[if IE]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <link href='/favicon.ico' rel='SHORTCUT ICON'>
+
+  </head>
+
+  <body class="layout--home wide">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          finagle
+          <span class="site-subtitle">Changing the world would be easier if I had the source code.</span>
+        </a>
+        <ul class="visible-links"></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+        <img src="/images/codemonkey.png" alt="Steve Sloan" itemprop="image">
+      
+    </div>
+  
+
+  <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name">Steve Sloan</h3>
+    
+    
+      <div class="author__bio" itemprop="description">
+        <p>Hacker, drummer, primate</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">Seattle, WA</span>
+        </li>
+      
+
+      
+        
+          
+            <li><a href="mailto:steve@finagle.org" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span></a></li>
+          
+        
+          
+            <li><a href="https://github.com/CodeMonkeySteve" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+          
+            <li><a href="https://www.linkedin.com/in/codemonkeysteve" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span class="label">LinkedIn</span></a></li>
+          
+        
+          
+            <li><a href="https://en.wikipedia.org/wiki/Finagle%27s_law" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-poop" aria-hidden="true"></i><span class="label">Finagle's Law</span></a></li>
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <div class="archive">
+    
+      <h1 id="page-title" class="page__title"></h1>
+    
+    
+
+<h3 class="archive__subtitle">Recent posts</h3>
+
+
+
+
+<div class="entries-list">
+  
+    
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/2015/12/ruby-gotcha-chained-assignment.html" rel="permalink">Ruby Gotcha: Chained Assignment
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2015-12-30T00:00:00-08:00">December 30, 2015</time>
+      </span>
+    
+
+    
+
     
   </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">I ran into a tricky bug that involved an obscure bit of Ruby behavior, involving the chained assignment idiom and overloaded assignment operators.
+</p>
+  </article>
 </div>
+
+  
+    
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/2015/12/http-caching-like-an-idiot-redux.html" rel="permalink">HTTP Caching Like an Idiot: Redux
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2015-12-26T00:00:00-08:00">December 26, 2015</time>
+      </span>
+    
 
     
 
-  
-      <h2>Previous post: <a href="/2011/05/audiobook-log.html">"AudioBook Log"</a> ...</h2>
-  
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Apparently Steam didn&#8217;t read my last blog post, as they&#8217;ve discovered their own way to Use HTTP Caching Like an
+Idiot.  Come on, people, what&#82...</p>
+  </article>
+</div>
 
   
+    
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/2013/05/how-to-use-http-caching-like-an-idiot.html" rel="permalink">How To Use Http Caching Like An Idiot
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2013-05-12T00:00:00-07:00">May 12, 2013</time>
+      </span>
+    
+
+    
+
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">I&#8217;ve found that it&#8217;s pretty easy to run your own custom blog for with zero hosting cost, and even survive some significant traffic spikes, with l...</p>
+  </article>
+</div>
 
   
+    
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/2012/03/small-footprint-mongodb.html" rel="permalink">Small Footprint MongoDB
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2012-03-26T00:00:00-07:00">March 26, 2012</time>
+      </span>
+    
+
+    
+
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">MongoDB comes configured out of the box for maximum performance and reliability on production databases.  But it can be a bit of a disk hog, and if you&#8217...</p>
+  </article>
+</div>
 
   
+    
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/2011/05/excluding-a-bad-rpm-package.html" rel="permalink">Excluding a bad RPM package
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2011-05-13T00:00:00-07:00">May 13, 2011</time>
+      </span>
+    
+
+    
+
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">I&#8217;m a big fan of KDE, as both a user and a developer, and Akregator is my RSS feed reader of choice.  I&#8217;m also a big fan of RSS feeds, using them...</p>
+  </article>
+</div>
 
   
+</div>
 
+
+<nav class="pagination">
   
+  <ul>
+    
+    
+    <li><a href="#" class="disabled"><span aria-hidden="true">Previous</span></a></li>
+    
 
-  
+    
+    
+      <li><a href="#" class="disabled current">1</a></li>
+    
 
-  
+    
+    
 
-  
+    
+    
+    
 
-  
+    
+      
+        
+        
+        
+        <li><a href="/page2/">2</a></li>
+      
+    
+      
+        
+        
+        
+        <li><a href="/page3/">3</a></li>
+      
+    
 
-  
+    
+    
+      <li><a href="#" class="disabled">&hellip;</a></li>
+    
 
-  
+    
+      <li><a href="/page9/">9</a></li>
+    
 
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
+    
+    
+      <li><a href="/page2/">Next</a></li>
+    
+  </ul>
+</nav>
 
 
-<div class="clear"></div>
 
-    </div>
   </div>
+</div>
+    </div>
 
-  <div id="subcol">
-    <div class="bt"><div></div></div>
-    <div id="sc2">
-      <div id="about" class="sidebar-node">
-  <h3>About Me</h3>
-  <ul class="dates">
-    <li><a href="http://github.com/CodeMonkeySteve/">CodeMonkeySteve</a> on <a href="http://github.com">GitHub</a></li>
-    <li><a href="http://www.linkedin.com/in/codemonkeysteve">Steve Sloan</a> in Real Life</li>
-    <li><a href="http://www.google.com/search?q=finagle">What's a Finagle?</a></li>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+
+    <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
   </ul>
 </div>
 
+<div class="page__footer-copyright">&copy; 2020 Steve Sloan. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
 
-      <div class="sidebar-node">
-  <h3>Recently</h3>
-  <ul class="dates">
-    
-      
-        <li><a href="/2011/05/excluding-a-bad-rpm-package.html"><span class="date">05.11</span> Excluding a bad RPM package</a></li>
-      
-    
-      
-        <li><a href="/2011/05/audiobook-log.html"><span class="date">05.11</span> AudioBook Log</a></li>
-      
-    
-      
-        <li><a href="/2011/04/toward-a-more-perfect-mongo-odm.html"><span class="date">04.11</span> Toward a More Perfect Mongo ODM</a></li>
-      
-    
-      
-        <li><a href="/2011/03/back-from-the-dead.html"><span class="date">03.11</span> Back from the Dead</a></li>
-      
-    
-      
-        <li><a href="/2010/10/take-my-money-please.html"><span class="date">10.10</span> Take my money, please!</a></li>
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-    <li><a href="/archive.html" class="archives">More ...</a></li>
-  </ul>
-</div>
-
-
+      </footer>
     </div>
-  </div>
-</div>
-<div id="subfoot">
-  <div class="bb">
-    <div></div>
-  </div>
-</div>
 
-<script type="text/javascript">
-  var disqus_shortname = 'finagle';
-  (function () {
-      var s = document.createElement('script'); s.async = true;
-      s.type = 'text/javascript';
-      s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
-      (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-  }());
-</script>
+    
+  <script src="/assets/js/main.min.js"></script>
 
-        <div id="footer">
-          <p>
-            <a href="http://validator.w3.org/check/referer" title="Validates this page">XHTML</a>,
-            <a href="http://jigsaw.w3.org/css-validator/check/referer?warning=no&amp;profile=css2" title="Validates the CSS on this page.">CSS</a>.
-            Template by <a href="http://www.soniciq.com" title="SonicIQ - Website Development">SonicIQ</a>.
-            Blog comments powered by <a href="http://disqus.com" class="dsq-brlink">Disqus</a>.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <script type="text/javascript">
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-22936286-1']);
-  _gaq.push(['_trackPageview']);
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
 
-</script>
-</body>
+
+
+
+
+
+  </body>
 </html>

@@ -1,0 +1,28 @@
+---
+layout: post
+author: code_monkey_steve
+title: "BitCoin: Equal Parts Awesome and Fail"
+tags: [bitcoin, p2p]
+---
+There's been a lot of talk about "BitCoin":http://bitcoin.org, lately, on "various":http://techliberation.com/2011/04/20/bitcoin-intermediaries-and-information-control/ "blogs":http://timothyblee.com/2011/04/19/bitcoins-collusion-problem/, and I just knew the InterWebs were just waiting for me to weigh in on the subject.
+
+The short answer is this:
+* BitCoin makes use of some spiffy technologies to effectively solve the single biggest problem with digital currencies -- double-spending -- which also essentially solves all other problems of counterfeiting and fraud.
+* BitCoin has utterly failed to address the issues of all fiat currencies: unrestrained inflation and eventual collapse.
+
+h2. The Awesome
+
+First, go read the original paper, "Bitcoin: A Peer-to-Peer Electronic Cash System":http://www.bitcoin.org/bitcoin.pdf by Satoshi Nakamoto.  Cool, huh?
+
+What BitCoin essentially does is to bind each coin to a scarce resource in the Real World, in this case, CPU (or GPU) processing time, as spread across a peerr-to-peer network.  Specifically, it uses the computation of a suitable "SHA1":http://en.wikipedia.org/wiki/Sha1 hash collision to prove that an amount of work has been performed, which in this case acts as a sort of a notarization that a transaction took place before a certain time.  The upshot is that in order to cheat the system, you'd have to employ more computing power than a majority of the other nodes on the network, a feat which would be difficult even with a large botnet.  Botnets usually have lots of bandwidth, but not much processing power, which is why they're usually used to perform "DDoS attacks":http://en.wikipedia.org/wiki/Denial-of-service_attack#Distributed_attack or just send spam.
+
+My only complaint with this system is that proof of work generation is itself busy-work, providing no other benefit other than to demonstrate that a computer was busy processing for some minimum amount of time.  This seems like a terrible waste of resources and although I confess that I have no better solution, it seems like there must be a way to put all this work toward some worthy purpose.  But this is an issue of efficiency, not efficacy.
+
+
+h2. The Fail
+
+As nicely as the BitCoin network solves the technical problems of securing a digital exchange system, it completely fails to properly address the underlying failings of fiat currency.  What is the value of a single BitCoin?  The system is designed to "increase the supply of coins":https://en.bitcoin.it/wiki/FAQ#How_are_new_Bitcoins_created? in proportion to it's use, in a attempt to keep the value stable.  They take care to avoid a "deflationary spiral":https://en.bitcoin.it/wiki/Deflationary_spiral, but this strikes me as conceited; how happens if BitCoin is so fabulously successful that people start hoarding it, decreasing the supply and increasing the value until BitCoins are so valuable that no one can afford them.
+
+A runaway increase in value sounds like a nice problem to have.  And while I suppose it could theoretically happen, at least in the short-term, if we're contemplating replacing existing currencies with a digital substitute, we should at least consider how the substitute would fair against the #1 failure of fiat currencies: inflation.  Every single fiat current in history has eventually been debased and devalued to the point of collapse.  Take the U.S. Dollar (Please.  Ha!)  Since 1900, over 98.5% of the value of the dollar has been lost to a barely-restrained expansion of the money supply.
+
+So what does BitCoin 

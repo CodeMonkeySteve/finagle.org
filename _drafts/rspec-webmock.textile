@@ -1,0 +1,36 @@
+---
+layout: post
+author: code_monkey_steve
+title: Stubbing the Web with RSPec and Webmock
+tags: [rspec, webmock, tips]
+---
+
+With web apps interfacing with more and more web services, testing becomes more complicated.  Webmock is great for stubbing a web request given the appropriate response, but needs a little more code to manage those responses.  Here's the solution I use:
+
+First, make sure your @spec_helper.rb@ looks something like this:
+
+<blockquote><pre><code>RSpec.configure do |config|
+  def config.fixture_path()  @fixture_path ||= Rails.root+'spec/fixtures'  end
+  ...
+  Dir[Rails.root.join("spec/support/**/*.rb")].each { |f| require f }
+end
+</code></pre></blockquote>
+
+That is, it should define a @fixture_path@ directory, under which the Webmock responses will be stored.  This should be defined before it includes all of the files in the @spec/support@ directory.
+
+Next, drop this file in your @spec/support@ directory:
+
+<script src="https://gist.github.com/1251592.js"></script>
+
+It's responsible for reading canned responses from the fixtures directory.  When your application makes a web request that doesn't already have a stubbed response, you'll get an error message with instructions for fetching and storing the response:
+
+<blockquote><pre><code>
+  WebMock::NetConnectNotAllowedError:
+    Real HTTP connections are disabled. Unregistered request: GET http://www.google.com/ with headers {'Accept'=>'*/*', 'User-Agent'=>'Ruby'}
+
+    You can stub this request with the following command:
+      mkdir -p 'app/spec/fixtureswebmockwww.google.com' && curl -i -o '/home/steve/tmp/foo/spec/fixtures/webmock/www.google.com/index.html' 'http://www.google.com:80/'
+ 
+</code></pre></blockquote>
+
+The command given will create the appropriate directory structure

@@ -1,0 +1,30 @@
+---
+layout: post
+author: code_monkey_steve
+title: A Cookbook of Civilization
+tags: []
+published: false
+---
+
+h2. Or "Surviving a Zombie Apocalypse"
+
+The seed for this idea became first planted in my mind in the fall of 2010, when I found myself coincidentally watching two television shows: BBC's "Survivors (2008)":http://www.imdb.com/title/tt1258189/ (a remake of a 1975 series) and AMC's "The Walking Dead (2010)":http://www.imdb.com/title/tt1520211/.  Both tell the stories of small bands of survivors of a global catastrophe, influenza and zombies respectively.  Of course there are lots of other examples of civilization-shattering catastrophes, some more plausible than others (proof of this is left as an exercise to the reader's Netflix queue).  But there are also still places on the Earth that even now have a level of civilization that is not much higher than that of a typical Mad Max film.
+
+These post-apocalyptic themes got my little hacker brain working on how I would go about surviving in a disaster-ravenge wasteland, and quickly came to the conclusion that the biggest obstacle in that sort of situation would be the sudden lack of access to vital information.  I would like to think that, at least in the first few days of such an event I would be lucky and clever enough to avoid becoming zombie fodder, but what about long term survival?  I've formulated a plan that goes something like this:
+
+# Ride-out the first few days of the end-of-civilization, letting whatever unnamed catastrophe run its course.
+# Meet up with other survivors and start scavenging and salvaging supplies, gather information and attempt to make long-range contact with other survivors (safety in numbers).
+# Relocate to a permanent settlement, some place with good access to water and farmland, but that's also easily defendable.
+# Recruit other survivors and start rebuilding civilization, expanding back into abandoned territory.
+
+Each of these steps can be thought of in terms of the size of the population involved: a band (< 10), tribe (10+), village (100+), city (1000+), etc.  Each of these populations needs a certain level of technology in order to survive at that size.  Most of that information has been hard-won by the human race across the centuries, and it seems to me to be the greatest tragedy were it to be lost, especially when it's needed most.
+
+In this day and age, all of this information is trivially accessible, if you know what you're looking for (the vast majority of it on, e.g. "Wikipedia":http://wikipedia.org).  But as we've learned from Google, it's not enough to have the information, you need to have it organized for easy searching and retrieval.  If one were, say, formerly employed as a software developer but now trying to make a living as a corn farmer, information on "nuclear fusion":http://en.wikipedia.org/wiki/Nuclear_fusion#Production_methods or the "Treaty of Ghent":http://en.wikipedia.org/wiki/Treaty_of_ghent are not going to be useful.  And while information on good fertilizers would be welcome, any time spent learning about "nitrogen fixation":http://en.wikipedia.org/wiki/Nitrogen_fixation is probably going to be a waste of time, at that point.
+
+So what we really need is "all of the useful information ever collected by the Human species", but organized by technology level (i.e., proportional to population size) as well as formulated into a collection of recipes -- a cookbook of civilization, if you will.
+
+Consider the first volume of such a series of books; the "band (< 10 people)" group.  This book (Volume #1) would contain 
+
+
+h2. Part 2:
+

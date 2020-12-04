@@ -1,9 +1,0 @@
-%ul
-  - for comic in Comics.values
-    %li
-      [
-      %a{ :href => "#{host_url}/comics/#{comic.short_name}.rss" } RSS
-      ]
-      %a{ :href => comic.link }= comic.name
-      %br/
-      %img{ :src => image_url( comic, Date.today ) }/

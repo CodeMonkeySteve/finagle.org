@@ -1,0 +1,20 @@
+---
+layout: post
+author: code_monkey_steve
+title: Rails, jQuery, Backbone, and Jasmine
+tags: [rails, javascript, jquery, backbone, jasmine]
+---
+
+
+
+h2. Rails
+* Create Rails UI Action
+* Create Rails UI View
+
+h2. Backbone
+* Include jQuery/Backbone
+* Add Backbone controllers, collections, models, views
+
+h2. Jasmine
+* Fixtures
+** UI fixture
