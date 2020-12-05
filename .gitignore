@@ -1,5 +1,7 @@
 .bundle
-.kdev4
+.jekyll-metadata
+.idea
 vendor/bundle/*
 !vendor/bundle/cache/*.gem
 _site
+sandbox

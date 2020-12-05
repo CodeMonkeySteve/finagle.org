@@ -1,8 +1,0 @@
-<p>At the moment, the tasks are a part of the <span class="caps">RDBXML</span> project, hosted by <a href="http://rubyforge.org">RubyForge</a> .  There is <a href="http://rdbxml.rubyforge.org/classes/Rake.html">documentation</a>, and you can view the latest version in <a href="http://rubyforge.org/plugins/scmsvn/viewcvs.php/trunk/rake/?root=rdbxml"><span class="caps">SVN</span> here</a>.</p>
-<p>Usage is simple enough:</p>
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="nb">require</span> <span class="s1">'rake/swigextensiontask'</span>
-<span class="n">desc</span> <span class="s2">"Build the BDB interface extension"</span>
-<span class="no">Rake</span><span class="o">::</span><span class="no">SWIGExtensionTask</span><span class="p">.</span><span class="nf">new</span> <span class="ss">:db</span> <span class="k">do</span> <span class="o">|</span><span class="n">t</span><span class="o">|</span>
-  <span class="n">t</span><span class="p">.</span><span class="nf">dir</span> <span class="o">=</span> <span class="s1">'ext'</span>
-  <span class="n">t</span><span class="p">.</span><span class="nf">link_libs</span> <span class="o">+=</span> <span class="p">[</span><span class="s1">'db'</span><span class="p">,</span> <span class="s1">'db_cxx'</span><span class="p">]</span>
-<span class="k">end</span></code></pre></figure><p>This will build <code>db.so</code>, from the <code>db.i</code> <span class="caps">SWIG</span> interface file in the <code>ext</code> directory, linking-aginst <code>db.so</code> and <code>db_cxx.so</code>.  For a full usage example, see the <a href="http://rubyforge.org/plugins/scmsvn/viewcvs.php/trunk/Rakefile?root=rdbxml&amp;view=markup">Rakefile for <span class="caps">RDBXML</span></a>.</p>
